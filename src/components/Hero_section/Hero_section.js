@@ -36,9 +36,8 @@ const Hero_section = () => {
       <div className="custom-carousel">
         <div className="custom-carousel-stage">
           <div
-            className={`custom-carousel-item ${
-              activeIndex === 0 ? "active" : ""
-            }`}
+            className={`custom-carousel-item ${activeIndex === 0 ? "active" : ""
+              }`}
           >
             <div className="custom-carousel-content">
               <div className="container custom-bg-primary">
@@ -77,11 +76,7 @@ const Hero_section = () => {
                         loading="lazy"
                         alt="carousel-slide-1"
                       />
-                      <div
-                        className="p-absolute bg-dark custom-stamp-1 appear-animation animated blurIn appear-animation-visible"
-                        data-appear-animation="blurIn"
-                        data-appear-animation-delay={800}
-                      >
+                      <div className="custom-stamp-1 slide">
                         <div className="rotate-animation">
                           <svg
                             viewBox="0 0 300 300"
@@ -93,17 +88,16 @@ const Hero_section = () => {
                               id="curvedText1"
                               fill="none"
                               stroke="none"
-                              d="M 32.550491,148.48008 A -108.15144,-108.15144 0 0 1 140.70194,40.328644 -108.15144,-108.15144 0 0 1 248.85338,148.48008 -108.15144,-108.15144 0 0 1 140.70194,256.63153 -108.15144,-108.15144 0 0 1 32.550491,148.48008 Z"
+                              d="M 150,44 A 110,110 0 1,1 149.9,44"
                             />
                             <text className="curved-text">
                               <textPath xlinkHref="#curvedText1">
-                                GLOBAL ACCOUNTING COMPANY - TAX ADVISOR - NEW
-                                YORK BASED -
+                                GLOBAL ACCOUNTING COMPANY - TAX ADVISOR - NEW YORK BASED -
                               </textPath>
                             </text>
                           </svg>
                         </div>
-                        <div className="p-absolute transform3dxy-n50 left-50pct top-50pct">
+                        <div className="pct">
                           <img
                             src={CustomIcon}
                             alt="Custom Icon"
@@ -120,9 +114,8 @@ const Hero_section = () => {
             </div>
           </div>
           <div
-            className={`custom-carousel-item ${
-              activeIndex === 1 ? "active" : ""
-            }`}
+            className={`custom-carousel-item ${activeIndex === 1 ? "active" : ""
+              }`}
           >
             <div className="custom-carousel-content custom-dark-overlay">
               <div
