@@ -1,0 +1,327 @@
+#header {
+    background-color: #fff;
+    padding: 20px 1rem;
+    position: relative;
+    z-index: 1030;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.col-logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.col-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.phone-link,
+.nav-list a {
+    /* font-family: "Lexend", sans-serif !important; */
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: -0.6px;
+        color: var(--dark);
+}
+
+
+
+.nav-link.active {
+    color: var(--dark-rgba-50) !important;
+}
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.dropdown-nav-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.header-nav .header-logo{
+    display: none;
+}
+
+.dropdown-nav-link svg {
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1050;
+    min-width: 220px;
+    padding: 0;
+    border: 1px solid var(--grey-200);
+    border-radius: var(--border-radius2x);
+    overflow: hidden;
+}
+
+.dropdown-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    padding-right: 22px !important;
+    padding-left: 22px !important;
+    border-bottom: 1px solid var(--grey-100);
+    color: var(--default);
+    font-size: 0.99em;
+    font-weight: 400;
+    padding: 6px 18px 6px 18px;
+    position: relative;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: var(--primary);
+    padding-left: 27px !important;
+}
+
+.col-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.phone-link {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+    color: var(--primary);
+}
+
+.btn-quote {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    background-color: var(--dark);
+    border-color: var(--dark) var(--dark) var(--dark-300);
+    color: var(--dark-inverse);
+}
+
+.btn-quote:hover {
+    background: #404040;
+    text-decoration: none !important;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phone-icon {
+    max-width: 24px;
+    height: auto;
+}
+
+.phone-link {
+    padding-right: 25px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone-link p {
+    white-space: nowrap;
+}
+
+.arrow-icon {
+    margin-left: 5px;
+}
+
+.col-menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .phone-link {
+        display: none;
+    }
+
+    .contact-info a {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .col-logo {
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0;
+    }
+
+    .phone-link {
+        display: flex;
+    }
+
+    .col-menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4BE296;
+        padding: 12px 22px;
+        border-radius: 20px;
+    }
+
+    .col-menu-toggle svg {
+        font-size: 17px;
+        color: white;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .nav-list li {
+        padding: 15px 0;
+        border-bottom: 1px solid #e9e7e7;
+    }
+
+    .dropdown-nav-link svg {
+        margin-right: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .dropdown.open .dropdown-nav-link svg {
+        rotate: -180deg;
+    }
+
+    .dropdown-menu li {
+        padding: 0;
+        border: none;
+    }
+
+    .header-nav {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-nav .header-logo {
+        display: block;
+    }
+
+    .col-nav {
+        position: absolute;
+        max-width: 0vw;
+        width: 40vw;
+        height: 100vh;
+        overflow: hidden;
+        padding: 1rem 0;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease;
+    }
+
+    .col-nav.open {
+        overflow: scroll;
+        max-width: 40vw;
+        padding: 1rem;
+    }
+
+    .dropdown-menu {
+        display: block;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        min-width: 90%;
+        transform: translateY(0);
+        border: 0;
+    }
+
+    .dropdown.open .dropdown-menu {
+        display: block;
+        max-height: 310px;
+        transform: translateY(10px);
+        position: relative;
+        border: 1px solid var(--grey-200);
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-quote {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .phone-link {
+        display: none;
+    }
+
+    .col-nav.open {
+        max-width: 80vw;
+        width: 80vw;
+    }
+}

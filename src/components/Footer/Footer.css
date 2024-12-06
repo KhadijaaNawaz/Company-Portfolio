@@ -1,0 +1,195 @@
+/* General Container Styles */
+.custom-container {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 5px ;
+  padding: 0 20px;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1 2 13%;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.footer-column1 {
+  flex: 1 2 25%;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+
+/* Footer Main Styles */
+.main-footer {
+  position: relative;
+  background: #f2f2f2;
+  color: #333;
+}
+
+.main-footer .widget-section {
+  
+  border-bottom: 1px solid #cfcfcf;
+  padding: 50px 0;
+}
+
+/* Logo and Description */
+.footer-widget.logo-widget {
+  margin-right: 50px;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-widget.logo-widget p {
+  margin-bottom: 36px;
+}
+
+/* Download Buttons */
+.download-btn {
+  display: flex;
+  gap: 15px;
+}
+
+.download-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 182px;
+  background: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.download-btn a:hover {
+  background: #555;
+}
+
+.download-btn img {
+  margin-right: 10px;
+}
+
+/* Links Widget */
+.links-widget .widget-title h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-list li {
+  margin-bottom: 10px;
+}
+
+.links-list li a {
+  font-size: 16px;
+  color: #555;
+  text-decoration: none;
+}
+
+.links-list li a:hover {
+  color: var(--primary);
+  
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  background: #eaeaea;
+  padding: 15px 0;
+}
+
+.footer-bottom .bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom .copyright {
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-bottom .copyright a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-bottom .copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #555;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-links li a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 991px) {
+  .footer-column {
+    flex: 1 1 50%;
+  }
+
+  .main-footer .widget-section {
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-bottom .bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .download-btn {
+    flex-direction: column;
+  }
+
+  .download-btn a {
+    margin-bottom: 10px;
+  }
+}
