@@ -10,20 +10,20 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
     return (
         <>
-            <footer className="main-footer">
-                <div className="widget-section custom-widget-section">
-                    <div className="footer-header">
+            <footer className="main_footer">
+                <div className="widget_section custom_widget_section">
+                    <div className="footer_header">
                         <div className="container">
                             {}
-                            <div className="footer-logo">
+                            <div className="footer_logo">
                                 <img src={logo} alt="Footer Logo" />
                             </div>
                             {}
-                            <div className="footer-contact">
+                            <div className="footer_contact">
                                 {}
-                                <div className="footer-item">
+                                <div className="footer_item">
                                     <div className="icon">
-                                    <FontAwesomeIcon icon={faPhone} />
+                                        <FontAwesomeIcon icon={faPhone} />
                                     </div>
                                     <div className="info">
                                         <span className="label">CALL US</span>
@@ -31,9 +31,9 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 {}
-                                <div className="footer-item">
+                                <div className="footer_item">
                                     <div className="icon">
-                                    <FontAwesomeIcon icon={faEnvelope} />
+                                        <FontAwesomeIcon icon={faEnvelope} />
                                     </div>
                                     <div className="info">
                                         <span className="label">SEND E-MAIL</span>
@@ -44,12 +44,12 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="custom-container">
-                        <div className="custom-row">
-                            <div className="footer-column1">
-                                <div className="footer-widget logo-widget custom-mr-30">
-                                    <figure className="footer-widget links-widget">
-                                        <div className="widget-title">
+                    <div className="custom_container">
+                        <div className="custom_row">
+                            <div className="footer_column1">
+                                <div className="footer_widget logo_widget custom_mr_30">
+                                    <figure className="footer_widget links_widget">
+                                        <div className="widget_title">
                                             <h4>Porto</h4>
                                         </div>
                                     </figure>
@@ -58,24 +58,24 @@ const Footer = () => {
                                         to thousands of businesses, private events, and
                                         universities.
                                     </p>
-                                    <div className="download-btn">
-                                        <a href="about.html" className="apple-store">
+                                    <div className="download_btn">
+                                        <a href="about.html" className="apple_store">
                                             <img src={AppStore} alt="" />
                                             <span>Download on App Store</span>
                                         </a>
-                                        <a href="about.html" className="play-store">
+                                        <a href="about.html" className="play_store">
                                             <img src={GooglePlay} alt="" />
                                             <span>Get it on Google Play</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div className="footer-column">
-                                <div className="footer-widget links-widget">
-                                    <div className="widget-title">
+                            <div className="footer_column">
+                                <div className="footer_widget links_widget">
+                                    <div className="widget_title">
                                         <h4>For Workers</h4>
                                     </div>
-                                    <ul className="links-list">
+                                    <ul className="links_list">
                                         <li>
                                             <a href="index.html">Find Work</a>
                                         </li>
@@ -94,12 +94,12 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="footer-column">
-                                <div className="footer-widget links-widget">
-                                    <div className="widget-title">
+                            <div className="footer_column">
+                                <div className="footer_widget links_widget">
+                                    <div className="widget_title">
                                         <h4>For Business</h4>
                                     </div>
-                                    <ul className="links-list">
+                                    <ul className="links_list">
                                         <li>
                                             <a href="index.html">Merchandising</a>
                                         </li>
@@ -118,12 +118,12 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="footer-column">
-                                <div className="footer-widget links-widget">
-                                    <div className="widget-title">
+                            <div className="footer_column">
+                                <div className="footer_widget links_widget">
+                                    <div className="widget_title">
                                         <h4>Company</h4>
                                     </div>
-                                    <ul className="links-list">
+                                    <ul className="links_list">
                                         <li>
                                             <a href="about.html">About Us</a>
                                         </li>
@@ -142,12 +142,12 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="footer-column">
-                                <div className="footer-widget links-widget">
-                                    <div className="widget-title">
+                            <div className="footer_column">
+                                <div className="footer_widget links_widget">
+                                    <div className="widget_title">
                                         <h4>Help & Support</h4>
                                     </div>
-                                    <ul className="links-list">
+                                    <ul className="links_list">
                                         <li>
                                             <a href="contact.html">Contact Us</a>
                                         </li>
@@ -169,9 +169,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="footer-bottom">
-                    <div className="custom-container">
-                        <div className="bottom-inner custom-flex custom-align-center custom-justify-between">
+                <div className="footer_bottom">
+                    <div className="custom_container">
+                        <div className="bottom_inner custom_flex custom_align_center custom_justify_between">
                             <div className="copyright">
                                 <p>
                                     Copyright © 2024 <a href="index.html">JobAway</a> All rights
@@ -179,7 +179,7 @@ const Footer = () => {
                                 </p>
                             </div>
 
-                            <ul className="social-links">
+                            <ul className="social_links">
                                 <li><h5>Follow Us On:</h5></li>
                                 <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a></li>
                                 <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} /></a></li>
