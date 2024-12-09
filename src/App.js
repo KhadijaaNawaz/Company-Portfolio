@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-import Header from './components/Header';
-import Hero_section from './components/Hero_section/Hero_section';
+import Header from './components/header/Header';
+// import Hero_section from './components/Hero_section/Hero_section';
 
-import Footer from './components/Footer/Footer';
+import Footer from './components/footer/Footer';
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
     <div>
     
       <Header />
-      <Hero_section />
+      {/* <Hero_section /> */}
 
       <Footer />
 

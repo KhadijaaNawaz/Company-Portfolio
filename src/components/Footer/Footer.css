@@ -1,10 +1,10 @@
-.custom_container {
+.footer_container {
   width: 100%;
   margin: 5px;
   padding: 0 20px;
 }
 
-.custom_row {
+.footer_row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -20,19 +20,19 @@
   margin-bottom: 30px;
 }
 
-.main_footer {
+.footer {
   position: relative;
   margin: auto;
   margin-top: 40px;
   color: #333;
 }
 
-.main_footer .widget_section {
+.footer .widget {
   border-bottom: 1px solid #cfcfcf;
   padding: 50px 0;
 }
 
-.footer_widget.logo_widget {
+.footer_widget.footer_widget_1 {
   margin-right: 50px;
 }
 
@@ -41,7 +41,7 @@
   margin-bottom: 20px;
 }
 
-.footer_widget.logo_widget p {
+.footer_widget.footer_widget_1 p {
   margin-bottom: 36px;
 }
 
@@ -156,7 +156,7 @@
     flex: 1 1 50%;
   }
 
-  .main_footer .widget_section {
+  .footer .widget {
     padding: 30px 0;
   }
 }
@@ -183,7 +183,8 @@
   }
 }
 
-.footer_header .container {
+.footer_header .footer_header_container {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,7 +212,7 @@
   gap: 15px;
 }
 
-.footer_item .icon {
+.footer_item .footer_icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,32 +224,32 @@
   font-size: 24px;
 }
 
-.footer_item .info {
+.footer_item .footer_info {
   display: flex;
   flex-direction: column;
 }
 
-.footer_item .info .label {
+.footer_item .footer_info .label {
   font-size: 14px;
   font-weight: bold;
   color: var(--secondary);
   text-transform: uppercase;
 }
 
-.footer_item .info .value {
+.footer_item .footer_info .value {
   font-size: 18px;
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
 
-.footer_item .info .value:hover {
+.footer_item .footer_info .value:hover {
   text-decoration: none;
   color: var(--secondary);
 }
 
 @media (max-width: 768px) {
-  .footer_header .container {
+  .footer_header .footer_header_container {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
@@ -272,17 +273,17 @@
     justify-content: flex-start;
   }
 
-  .footer_item .icon {
+  .footer_item .footer_icon {
     width: 40px;
     height: 40px;
     font-size: 20px;
   }
 
-  .footer_item .info .label {
+  .footer_item .footer_info .label {
     font-size: 12px;
   }
 
-  .footer_item .info .value {
+  .footer_item .footer_info .value {
     font-size: 16px;
   }
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from '../../assets/logo.png';
-import AppStore from '../../assets/icon-4.png';
-import GooglePlay from '../../assets/icon-5.png';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -10,32 +8,32 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
     return (
         <>
-            <footer className="main_footer">
-                <div className="widget_section custom_widget_section">
+            <footer className="footer">
+                <div className="footer_widget">
                     <div className="footer_header">
-                        <div className="container">
+                        <div className="footer_header_container">
                             {}
                             <div className="footer_logo">
-                                <img src={logo} alt="Footer Logo" />
+                                <img src="assets/logo.png" alt="Footer Logo" />
                             </div>
                             {}
                             <div className="footer_contact">
                                 {}
                                 <div className="footer_item">
-                                    <div className="icon">
+                                    <div className="footer_icon">
                                         <FontAwesomeIcon icon={faPhone} />
                                     </div>
-                                    <div className="info">
+                                    <div className="footer_info">
                                         <span className="label">CALL US</span>
                                         <a href="tel:+8001234567" className="value">800 123 4567</a>
                                     </div>
                                 </div>
                                 {}
                                 <div className="footer_item">
-                                    <div className="icon">
+                                    <div className="footer_icon">
                                         <FontAwesomeIcon icon={faEnvelope} />
                                     </div>
-                                    <div className="info">
+                                    <div className="footer_info">
                                         <span className="label">SEND E-MAIL</span>
                                         <a href="mailto:you@domain.com" className="value">you@domain.com</a>
                                     </div>
@@ -44,10 +42,10 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="custom_container">
-                        <div className="custom_row">
+                    <div className="footer_container">
+                        <div className="footer_row">
                             <div className="footer_column1">
-                                <div className="footer_widget logo_widget custom_mr_30">
+                                <div className="footer_widget footer_widget_1 ">
                                     <figure className="footer_widget links_widget">
                                         <div className="widget_title">
                                             <h4>Porto</h4>
@@ -60,11 +58,11 @@ const Footer = () => {
                                     </p>
                                     <div className="download_btn">
                                         <a href="about.html" className="apple_store">
-                                            <img src={AppStore} alt="" />
+                                            <img src="assets/icon-4.png" alt="" />
                                             <span>Download on App Store</span>
                                         </a>
                                         <a href="about.html" className="play_store">
-                                            <img src={GooglePlay} alt="" />
+                                            <img src="assets/icon-5.png" alt="" />
                                             <span>Get it on Google Play</span>
                                         </a>
                                     </div>
@@ -170,8 +168,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer_bottom">
-                    <div className="custom_container">
-                        <div className="bottom_inner custom_flex custom_align_center custom_justify_between">
+                    <div className="footer_container">
+                        <div className="bottom_inner footer_flex footer_align_center footer_justify_between">
                             <div className="copyright">
                                 <p>
                                     Copyright © 2024 <a href="index.html">JobAway</a> All rights
