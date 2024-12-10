@@ -95,7 +95,7 @@
 }
 
 .footer_links_list li a:hover {
-  color: var(--primary);
+  color: var(--light-green);
 }
 
 .footer_bottom {
