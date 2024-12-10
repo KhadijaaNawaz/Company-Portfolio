@@ -1,22 +1,22 @@
-import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 import Header from './components/header/Header';
-// import Hero_section from './components/Hero_section/Hero_section';
-
 import Footer from './components/footer/Footer';
-
+import Home from './pages/home/Home';
 
 const App = () => {
   return (
     <div>
-    
-      <Header />
-      {/* <Hero_section /> */}
-
-      <Footer />
-
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
-  )
-}
+  );
+};
+
 export default App;
