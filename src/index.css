@@ -2,9 +2,10 @@
 
 
 :root {
-  --font-large: 24px;
-  --font-medium: 18px;
-  --font-small: 14px;
+  --font-large: 44px;
+  --font-medium: 22px;
+  --font-small: 17px;
+  --font-card-header:17px;
   --blue : #0073e6;
   --primary: #1F2F28;
   --light-green: #4be296;
@@ -88,12 +89,43 @@ li {
   background-color: var(--primary);
 }
 
-@media (max-width: 575px) {
-	body {
-		font-size: 13px;
-	}
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  :root {
+    --font-large: 38px;
+    --font-medium: 20px;
+    --font-small: 15px;
+    --font-card-header: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --font-large: 32px;
+    --font-medium: 18px;
+    --font-small: 14px;
+    --font-card-header: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-large: 28px;
+    --font-medium: 16px;
+    --font-small: 13px;
+    --font-card-header: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --font-large: 24px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-card-header: 12px;
+  }
 }

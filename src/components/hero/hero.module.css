@@ -1,96 +1,168 @@
 .hero_section {
-    width: 100vw;
-    height: 90vh;
-    /* position: relative; */
-    overflow: hidden;
-  }
-  
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.slide {
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url('../../../public/assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide_content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--light);
+  text-align: left;
+  margin-left: 10rem;
+}
+
+.slide_content h3 {
+  font-size: var(--font-medium);
+  font-weight: 400;
+}
+
+.slide_content h2 {
+  font-size: var(--font-large);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.slide_content p {
+  font-size: var(--font-small);
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.get_started_button {
+  width: 200px;
+  padding: 20px 20px;
+  font-size: var(--font-small);
+  font-weight: 600;
+  background-color: var(--light);
+  color: var(--dark);
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.get_started_button:hover {
+  background-color: var(--light);
+  border: 1px solid var(--dark);
+}
+
+.arrow {
+  padding-left: 20px;
+}
+
+.prev_button,
+.next_button {
+  width: 50px;
+  height: 50px;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.prev_button {
+  left: 90px;
+}
+
+.next_button {
+  right: 90px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
   .slide {
-    width: 90%;
-    height: 90vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-image: url('../../../public/assets/bg.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-  }
-  
-  .slide_content {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: var(--light);
-    text-align: left;
-    margin-left: 10rem;
-  }
-  
-  .slide_content h3 {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  
-  .slide_content h2 {
-    font-size: 38px;
-    font-weight: bold;
-  }
-  
-  .slide_content p {
-    font-size: 18px;
-    color: var(--gray);
-    font-weight: 400;
-  }
-  
-  .get_started_button {
-    width: 200px;
-    padding: 20px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: var(--light);
-    color: var(--dark);
-    border: none;
-    border-radius: 35px;
-    cursor: pointer;
-    margin-top: 50px;
-  }
-  
-  .get_started_button:hover {
-    background-color: var(--light);
-    border: 1px solid var(--dark);
+    height: 80vh;
   }
 
-  .arrow{
-    padding-left: 20px;
+  .slide_content {
+    max-width: 70%;
+    margin-left: 3rem;
   }
-  
+
+  .get_started_button {
+    width: 150px;
+    padding: 12px 15px;
+    font-size: var(--font-small);
+  }
+
   .prev_button,
   .next_button {
-    width: 50px;
-    height: 50px;
-    color: var(--gray);
-    border: 1px solid var(--gray);
-    border-radius: 50%;
-    display: flex;
+    top: 90%;
+    transform: translateY(-90%);
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_section {
+    height: 70vh;
+  }
+
+  .slide {
+    height: 60vh;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    cursor: pointer;
+    text-align: center;
   }
-  
-  .prev_button {
-    left: 90px;
+
+  .slide_content {
+    max-width: 90%;
+    margin-left: 0;
   }
-  
+
+  .get_started_button {
+    width: 130px;
+    padding: 10px;
+    font-size: var(--font-small);
+    margin-top: 5px;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    height: 50vh;
+  }
+
+  .get_started_button {
+    width: 120px;
+    padding: 8px;
+    font-size: var(--font-small);
+    margin-top: 5px;
+  }
+
+  .prev_button,
   .next_button {
-    right: 90px;
+    width: 30px;
+    height: 30px;
+    font-size: var(--font-small);
   }
-  
+}

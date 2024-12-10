@@ -48,7 +48,7 @@ const Services = () => {
                     <SwiperSlide key={service.id}>
                         <div className={styles.card}>
                             <h3>{service.title}</h3>
-                            <p>{truncateText(service.description, 300)}</p>
+                            <p>{truncateText(service.description, 250)}</p>
                             {/* Learn More Button */}
                             <Link
                                 className={styles.learn_more_button}
