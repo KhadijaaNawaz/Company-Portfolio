@@ -156,7 +156,6 @@ html {
 
 body {
 	background-color: var(--light);
-	/* color: var(--default); */
 	font-family: "Poppins", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
@@ -169,7 +168,6 @@ body a {
 	outline: none !important;
 }
 
-/* Selection */
 ::-moz-selection {
 	color: var(--primary-inverse);
 	background: var(--primary);
