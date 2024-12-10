@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "title": "Customer Success",
+      "description": "NetSuite Education Services provides expert education and training to increase your users’ proficiency with NetSuite. A variety of learning options, including more than 100 on-demand courses, certifications and live training opportunities tailored to your specific needs help to develop a user base that is equipped with the tools and knowledge needed to boost NetSuite productivity."
+    },
+    {
+      "id": 2,
+      "title": "Financial Services",
+      "description": "Our financial services provide expert solutions for managing your organization's budgets, investments, and cash flow. With tailored strategies and advanced tools, our services are designed to ensure your organization's financial health and sustainability."
+    },
+    {
+      "id": 3,
+      "title": "Technical Support",
+      "description": "Our 24/7 technical support ensures that your systems are always up and running. We provide troubleshooting, software updates, and proactive monitoring to minimize downtime and keep your operations efficient."
+    },
+    {
+      "id": 4,
+      "title": "Technical Support",
+      "description": "Our 24/7 technical support ensures that your systems are always up and running. We provide troubleshooting, software updates, and proactive monitoring to minimize downtime and keep your operations efficient."
+    },
+    {
+      "id": 5,
+      "title": "Technical Support",
+      "description": "Our 24/7 technical support ensures that your systems are always up and running. We provide troubleshooting, software updates, and proactive monitoring to minimize downtime and keep your operations efficient."
+    }
+  ]
+  
