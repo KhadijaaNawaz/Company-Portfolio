@@ -60,7 +60,7 @@
 }
 
 .header_nav_link:hover {
-    color: var(--primary) !important;
+    color: var(--light-green) !important;
 }
 
 .header_dropdown_nav {
@@ -117,7 +117,7 @@
 
 .header_dropdown_item:hover {
     background-color: #f0f0f0;
-    color: var(--primary);
+    color: var(--light-green);
     padding-left: 27px !important;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .phone_link:hover {
-    color: var(--primary);
+    color: var(--light-green);
 }
 
 .btn_quote {

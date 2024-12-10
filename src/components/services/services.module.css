@@ -1,0 +1,155 @@
+.services_wrapper {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--primary);
+    /* background-image: url('../../../public/assets/waves.svg'); */
+    background-size: cover;
+    background-position: center left;
+    left: -75%;
+    top: -33%;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    overflow-x: hidden;
+  }
+
+  .services_content{
+    width: 100%;
+    overflow-x: hidden;
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: 15%;
+    text-align: left;
+  }
+  
+  .btn_gradient {
+    background-image: linear-gradient(to right, #1f2f28 0%, var(--dark) 100%);
+    color: var(--light);
+    padding: 10px 15px;
+    width: 15%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: .8rem;
+    font-weight: 600;
+  }
+  
+  .section_heading {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 30px 0 10px 0px;
+  }
+  
+  .section_description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 40px;
+  }
+  
+  .cards_slider {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    position: relative;
+    padding: 30px 20px 50px 20px;
+    border: 1px solid #ddd;
+    background-color: var(--light);
+    color: var(--dark);
+    border-radius: 8px;
+    height: 300px; 
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .card h3{
+    margin-bottom: .8rem;
+  }
+  
+  .card:hover {
+    height: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .learn_more_button {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: var(--blue);
+    text-decoration: underline;
+    border-bottom: 1px solid var(--blue);
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .card:hover .learn_more_button {
+    display: block;
+  }
+ 
+  
+  .slider_navigation {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 45px;
+  }
+  
+  .nav_circle {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .nav_circle svg {
+    color: var(--gray);
+    font-size: .8rem;
+  }
+
+  .services_wrapper .swiper-slide {
+    width: 100% !important;
+    flex-shrink: 1 !important;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .section_heading {
+      font-size: 2em;
+    }
+  
+    .section_description {
+      font-size: 0.9rem;
+    }
+  
+    .card {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn_gradient {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .nav_circle {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .nav_circle svg {
+      font-size: 1rem;
+    }
+  }
+  
