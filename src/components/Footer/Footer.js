@@ -14,14 +14,14 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_widget}>
-        {}
+
         <div className={styles.footer_header}>
           <div className={styles.footer_header_container}>
             <div className={styles.footer_logo}>
               <img src="assets/logo.png" alt="Footer Logo" />
             </div>
             <div className={styles.footer_contact}>
-              {}
+      
               <div className={styles.footer_item}>
                 <div className={styles.footer_icon}>
                   <FontAwesomeIcon icon={faPhone} />
@@ -33,7 +33,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              {}
+      
               <div className={styles.footer_item}>
                 <div className={styles.footer_icon}>
                   <FontAwesomeIcon icon={faEnvelope} />
@@ -51,14 +51,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {}
         <div className={styles.footer_container}>
           <div className={styles.footer_row}>
-            {}
             <div className={styles.footer_column1}>
               <div
-                className={`${styles.footer_widget} ${styles.footer_links_widget}`}
+                className={`${styles.footer_widget} ${styles.footer_widget_1} ${styles.footer_links_widget}`}
               >
                 <div className={styles.footer_widget_title}>
                   <h4>Porto</h4>
@@ -80,7 +77,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {}
+    
             <div className={styles.footer_column}>
               <div
                 className={`${styles.footer_widget} ${styles.footer_links_widget}`}
@@ -107,8 +104,6 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-
-            {}
             <div className={styles.footer_column}>
               <div
                 className={`${styles.footer_widget} ${styles.footer_links_widget}`}
@@ -136,7 +131,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {}
+    
             <div className={styles.footer_column}>
               <div
                 className={`${styles.footer_widget} ${styles.footer_links_widget}`}
@@ -155,7 +150,7 @@ const Footer = () => {
                     <a href="#">Partners</a>
                   </li>
                   <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="#">Blog</a>
                   </li>
                   <li>
                     <a href="#">Clients</a>
@@ -164,7 +159,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {}
+    
             <div className={styles.footer_column}>
               <div
                 className={`${styles.footer_widget} ${styles.footer_links_widget}`}
@@ -195,7 +190,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {}
       <div className={styles.footer_bottom}>
         <div className={styles.footer_container}>
           <div
