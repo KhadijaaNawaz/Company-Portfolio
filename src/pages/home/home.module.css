@@ -16,7 +16,12 @@
   max-width: 80%;
   margin: 0 auto;
 }
-
+.icon
+{
+  background-color: var(--light-green-icon);
+  border-radius: 50%;
+ 
+}
 .column {
   display: flex;
   align-items: center;
@@ -151,3 +156,4 @@
 .contact_btn:hover:after {
 	width: 100%;
 }
+

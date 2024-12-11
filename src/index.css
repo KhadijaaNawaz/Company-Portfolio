@@ -3,13 +3,17 @@
 
 :root {
   --font-large: 44px;
+  --font-large-extra: 59px;
   --font-medium: 22px;
   --font-small: 17px;
   --font-card-header:17px;
   --blue : #0073e6;
   --primary: #1F2F28;
   --light-green: #4be296;
+  --light-green-bg: #9be5c0;
   --dark-inverse: #FFF;
+  --light-green-icon:#DBF9EA;
+  --hover-color: #55a630;
 
   --dark-rgba-50: rgba(17, 17, 17, 0.5);
    
@@ -96,8 +100,8 @@ code {
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
   :root {
-    --font-large: 38px;
-    --font-medium: 20px;
+    --font-large: 44px;
+    --font-medium: 25px;
     --font-small: 15px;
     --font-card-header: 15px;
   }

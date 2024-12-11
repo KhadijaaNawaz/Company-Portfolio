@@ -1,0 +1,47 @@
+
+
+.experience_flex {
+    display: flex;
+    padding-top: 0.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+  .experience_block
+  {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .experience_mark {
+    color: #000;
+    position: relative;
+    line-height: 30px;
+    font-size: var(--font-large-extra);
+    letter-spacing: -0.05rem;
+    padding: 0;
+    background-color: var(--light-green-bg);
+  
+    display: inline-block;
+  }
+  
+  .experience_mark::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    height: 50%; 
+    width: 100%; 
+    background-color: var(--light-green-bg); 
+    z-index: -1; 
+  }
+  
+  .experience_text
+  {
+    font-size: var(--font-medium);
+    font-style: italic;
+     font-family: 'YourTertiaryFont', serif;
+    color: #000;
+    padding-left: 0.5rem;
+  }
+  

@@ -9,7 +9,7 @@
   border-radius: 10px;
   overflow-x: hidden;
   z-index: 1; 
-  height: 790px;
+  height: 830px;
 }
 
 .services_wrapper::before {
@@ -159,7 +159,6 @@
   .btn_gradient {
     font-size: var(--font-small);
   }
-  
 }
 
 @media (max-width: 480px) {
@@ -184,4 +183,19 @@
   .card p {
     font-size: var(--font-small);
   }
+}
+
+/* Fix slider_bottom at the bottom of the services_wrapper */
+.slider_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #f8f9fa; 
+  display: flex; 
+  justify-content: center; 
+  font-size: 16px;
+  align-items: center; 
+  text-align: center;
+  margin: 55px -120px;
+ 
 }
