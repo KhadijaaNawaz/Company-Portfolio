@@ -83,6 +83,7 @@
     list-style: none;
     position: absolute;
     background-color: #fff;
+    color: #525151;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     display: none;
     transform: translateY(-10px);
@@ -98,8 +99,6 @@
 .header_dropdown_menu li a {
     display: block;
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
     padding-top: 12px !important;
     padding-bottom: 12px !important;
     padding-right: 22px !important;
@@ -118,7 +117,7 @@
 .header_dropdown_item:hover {
     background-color: #f0f0f0;
     color: var(--light-green);
-    padding-left: 27px !important;
+    padding-left: 35px !important;
 }
 
 .header_col_contact {
