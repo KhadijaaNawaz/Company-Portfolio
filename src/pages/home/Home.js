@@ -101,7 +101,7 @@ const Home = () => {
                 "Whether you're a small business owner, an individual seeking tax advice, or a multinational corporation, we're here to support you. Contact us today to schedule a consultation and discover how we can help you achieve financial peace of mind."
               }
             />
-            <button className={`${homestyles.contact_btn}`}>
+            <button className={`${homestyles.contact_btn} `}>
               Contact Us
               <span className={homestyles.arrow}>
                 <FontAwesomeIcon icon={faArrowRight} />

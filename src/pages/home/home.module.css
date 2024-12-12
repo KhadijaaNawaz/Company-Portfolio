@@ -104,7 +104,7 @@
   align-items: flex-start;
 }
 
-.contact_btn{
+.contact_btn {
   width: 200px;
   border: none;
   outline: none;
@@ -112,16 +112,49 @@
   border-radius: 30px;
   text-align: center;
   color: var(--light);
-  background-color: var(--dark);
+  background: linear-gradient(135deg, var(--dark), #333); 
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 30px;
   cursor: pointer;
   display: inline-block;
+  position: relative;
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact_btn .arrow{
+.contact_btn::after {
+  content: "";
+  position: absolute;
+ 
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease-out, opacity 0.6s ease-out;
+  opacity: 0;
+}
+
+.contact_btn:hover::after {
+  transform: translate(-50%, -50%) scale(1.5); 
+  opacity: 1;
+}
+
+.contact_btn:hover {
+ 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.contact_btn .arrow {
   padding-left: 10px;
+  display: inline-block; 
+  transition: transform 0.3s ease; 
+}
+
+.contact_btn:hover .arrow {
+  transform: translateX(7px) scaleX(1); 
 }
 
 .left {
@@ -133,12 +166,12 @@
   width: 50%;
 }
 @media (max-width: 768px) {
-  /* Remove flex layout for smaller screens and switch to block layout or stacking */
+ 
   .why_us_wrapper {
-    display: block; /* Remove flex layout */
-  width: 80%; /* Adjust width */
+    display: block; 
+  width: 80%; 
   margin: 0 auto; 
-  text-align: center; /* Center text inside the wrapper */
+  text-align: center; 
   padding: 2rem;
   margin-top: 20px;
   }
@@ -177,4 +210,5 @@
 .contact_btn:hover:after {
 	width: 100%;
 }
+
 
