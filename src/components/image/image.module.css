@@ -1,0 +1,53 @@
+/* Container for the background and foreground images */
+.imageWithBackground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  /* Prevent overflow if images are larger */
+  }
+  
+  /* Styles for background SVG */
+  .backgroundSvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;  /* Increase size of the SVG */
+    height: 200%; /* Increase size of the SVG */
+    z-index: 1;   /* Place the SVG behind the foreground image */
+    transform: translate(-50%, -50%); /* Adjust positioning of the SVG */
+  }
+  
+  /* Styles for foreground image */
+  .foregroundImage {
+    position: absolute;
+    top: 20%; /* Adjust to position the image properly */
+    left: 20%;
+    width: 40%; /* Decrease width to make the image smaller */
+    height: auto;
+    z-index: 2;   /* Ensure the foreground image stays on top */
+  }
+  
+  /* Content section with text and icon */
+  .content {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(66, 63, 63, 0.1);
+    z-index: 3;
+  }
+  
+  /* Icon styling */
+  .icon {
+    margin-right: 8px;
+  }
+  
+  /* Font styling for the content */
+  .font-secondary {
+    font-family: "Arial", sans-serif;
+  }
+  

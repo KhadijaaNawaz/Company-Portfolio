@@ -132,7 +132,28 @@
 .right {
   width: 50%;
 }
+@media (max-width: 768px) {
+  /* Remove flex layout for smaller screens and switch to block layout or stacking */
+  .why_us_wrapper {
+    display: block; /* Remove flex layout */
+  width: 80%; /* Adjust width */
+  margin: 0 auto; 
+  text-align: center; /* Center text inside the wrapper */
+  padding: 2rem;
+  margin-top: 20px;
+  }
 
+  .why_us_container {
+    display: block;
+    width: 100%;
+  }
+
+  .left, .right {
+    width: 100%; 
+    text-align: center; 
+  }
+
+}
 
 .contact_btn:before, 
 .contact_btn:after {

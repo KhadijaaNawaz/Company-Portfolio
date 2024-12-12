@@ -25,7 +25,7 @@ const Accordion = () => {
             className={styles.accordionHeader}
             onClick={() => toggleAccordion(index)}
           >
-            {item.title}
+           <a className={styles.accordionHover}> {item.title}</a>
             <span
               className={`${styles.icon} ${
                 openIndex === index ? styles.rotate : ''

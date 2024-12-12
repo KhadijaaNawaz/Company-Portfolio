@@ -1,47 +1,115 @@
+
+
 .accordion_section .accordionItem {
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: box-shadow 0.3s;
-  }
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--dark);
+  transition: all 0.3s ease-in-out;
+}
+.accordion_section .accordionItem::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--dark);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s ease-in-out;
+}
+.accordion_section .accordionItem:hover::after {
+  transform: scaleX(1);
+}
+
+
+.accordionHeader {
+  background: #fff;
+  padding: 2rem 1rem;
+  font-size: var(--font-card-header);
+  font-weight: bold; /* Bolder text for prominence */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   
-  .accordionItem.open {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .accordionHeader {
-    background: #fff;
-    padding: 2rem 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .accordionContent {
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 1rem 2rem 1rem;
-    text-align: left;
-    color: var(--gray);
-    font-weight: 300;
-    max-height: 0; /* Collapsed state */
-    display: none; /* Initially hidden */
-  }
-  
-  .accordion_section .accordionContent.show {
-    display: block; /* Make it visible when opened */
-    max-height: 200px; /* Adjust this value as needed for smooth transition */
-  }
-  
-  .accordion_section .icon {
-    transition: transform 0.3s ease;
-  }
-  
-  .accordion_section .icon.rotate {
-    transform: rotate(180deg);
-  }
-  
+  transition: background 0.3s ease;
+}
+
+
+.accordionContent {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  padding: 1rem 1rem 2rem 1rem;
+  text-align: left;
+  color: var(--gray);
+  font-weight: 400;
+  max-height: 0; 
+  opacity: 0; 
+  display: none;
+}
+
+.accordion_section .accordionContent.show {
+  display: block; 
+  max-height: 200px; 
+  opacity: 1;
+}
+
+.accordion_section .icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.accordion_section .icon.rotate {
+  transform: rotate(180deg);
+  color: var(--secondary); /* Change icon color when rotated */
+}
+
+.accordionHover {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  font-weight: 500; /* Slightly bolder text */
+}
+
+.accordionHover::before {
+  background: var(--light-green-icon);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.accordionHover:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.accordionItem.open .accordionHeader {
+  background-color: var(--light-blue); /* Subtle color change when open */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Inner shadow for more emphasis */
+}
+
+.accordion_section {
+  padding: 1rem;
+}
+
+.accordion_item::before {
+  content: "▼"; /* Add a symbol for the accordion item */
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--dark);
+  transition: transform 0.3s ease;
+}
+
+.accordion_item.open::before {
+  transform: translateY(-50%) rotate(180deg); /* Rotate the symbol when open */
+}

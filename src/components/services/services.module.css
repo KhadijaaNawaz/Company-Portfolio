@@ -140,6 +140,20 @@
   width: 100% !important;
   flex-shrink: 1 !important;
 }
+.slider_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  color: #f8f9fa; 
+  display: flex; 
+  justify-content: center; 
+  font-size: var(--font-small);
+  align-items: center; 
+  text-align: center;
+  margin: 55px 16px;
+
+ 
+}
 
 /* Media Queries for Responsive Fonts */
 @media (max-width: 768px) {
@@ -159,6 +173,12 @@
   .btn_gradient {
     font-size: var(--font-small);
   }
+  .slider_bottom {
+   
+    margin: 50px 3px;
+   
+  }
+  
 }
 
 @media (max-width: 480px) {
@@ -183,19 +203,11 @@
   .card p {
     font-size: var(--font-small);
   }
+  .slider_bottom {
+   
+    margin: 50px 0px ;
+   
+  }
 }
 
-/* Fix slider_bottom at the bottom of the services_wrapper */
-.slider_bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: #f8f9fa; 
-  display: flex; 
-  justify-content: center; 
-  font-size: 16px;
-  align-items: center; 
-  text-align: center;
-  margin: 55px -120px;
- 
-}
+
