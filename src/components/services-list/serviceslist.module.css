@@ -1,0 +1,80 @@
+/* serviceslist.module.css */
+
+.servicesContainer {
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    width: 90%;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .servicesTitle {
+    font-size: var(--font-medium);
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: left;
+  }
+  
+  .servicesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .serviceItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom: 0.7px solid #e2dbdb;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .serviceItem:hover {
+    border-color: var(--light-green);
+  }
+  
+  .active {
+    background-color: var(--background);
+  }
+  
+  .serviceLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .serviceText {
+    font-size:var(--font-small);
+    color: var(--dark-rgba-50);
+  }
+  
+  .active .serviceText {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .chevronIcon,
+  .activeIcon {
+    font-size: 0.7rem;
+    color: #fff;
+    background-color: var(--light-green);
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .activeIcon {
+    background-color: var(--light-green);
+  }
+  
+ 

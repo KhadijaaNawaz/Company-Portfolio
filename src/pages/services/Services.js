@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";  // Added useEffect import
+import React, { useState, useEffect } from "react";
 import servicestyles from "./service.module.css";
 import homestyles from "../home/home.module.css";
 import Hero from "../../components/service-hero/ServiceHero.js";
@@ -8,17 +8,24 @@ import IndustriesSection from "../../components/industries-section/IndustriesSec
 import ExploreFurtherSection from "../../components/explore/Explore.js";
 import services from "./services.json";
 
-
-import { faChevronLeft, faChevronRight, faClock } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
+
+  const breadcrumbs = [
+    { text: "HOME", isActive: false },
+    { text: "SERVICES", isActive: true },
+  ];
  
   return (
     <div className={servicestyles.service_page}>
-      <div className="service_wrapper">
-        <Hero />
+      <div className={servicestyles.service_wrapper}>
+        <Hero
+         buttonText="WHAT WE DO" 
+         title="Our Services" 
+         breadcrumbs={breadcrumbs}  />
         <section className={homestyles.why_us_wrapper}>
           <div className={homestyles.why_us_container}>
             <div className={homestyles.left}></div>

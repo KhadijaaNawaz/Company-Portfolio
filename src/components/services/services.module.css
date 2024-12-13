@@ -152,10 +152,8 @@
   text-align: center;
   margin: 55px 16px;
 
- 
 }
 
-/* Media Queries for Responsive Fonts */
 @media (max-width: 768px) {
   .section_heading {
     font-size: var(--font-medium);
@@ -174,11 +172,11 @@
     font-size: var(--font-small);
   }
   .slider_bottom {
-   
+
     margin: 50px 3px;
-   
+
   }
-  
+
 }
 
 @media (max-width: 480px) {
@@ -204,10 +202,62 @@
     font-size: var(--font-small);
   }
   .slider_bottom {
-   
+
     margin: 50px 0px ;
-   
+
   }
 }
+@media (max-width: 788px) {
 
+  .services_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+  }
 
+  .services_content {
+    margin-left: 0; 
+    text-align: center; 
+    width: 70%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 10px auto; 
+    width: 90%; 
+    text-align: center;
+  }
+
+  .slider_navigation {
+    justify-content: center;
+  }
+
+  .nav_circle {
+    margin: 0 5px; 
+  }
+
+  .slider_bottom {
+    position: relative;
+    bottom: 0;
+    margin: 20px auto; 
+    text-align: center;
+    width: 100%;
+  }
+
+  .section_heading {
+    font-size: var(--font-medium);
+    text-align: center;
+  }
+
+  .section_description {
+    font-size: var(--font-small);
+    text-align: center;
+  }
+}

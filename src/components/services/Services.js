@@ -39,13 +39,13 @@ const Services = () => {
           }}
           modules={[Navigation]}
           breakpoints={{
-            1100: {
+            1200: {
               slidesPerView: 4,
             },
-            768: {
+            1050: {
               slidesPerView: 3,
             },
-            488: {
+            788: {
               slidesPerView: 2,
             },
             
