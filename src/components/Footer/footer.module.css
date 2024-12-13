@@ -156,7 +156,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1300px;
+  width: 90%;
   margin: 0 auto;
   padding-bottom: 40px;
   border-bottom: 0.7px solid rgb(216, 207, 207);

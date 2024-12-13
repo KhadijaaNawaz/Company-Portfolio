@@ -1,0 +1,65 @@
+
+.exploreContainer {
+    display: flex;
+    align-items: center;
+    background-color: #338a5b;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: 30px;
+  }
+
+ .exploreGradient {
+    background: linear-gradient(to right, #2b9569, #376f51); 
+    padding: 20px 50px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    text-align: end;
+    white-space: nowrap;
+    flex-shrink: 0; 
+    width: 30%;
+  }
+  
+  .exploreLabel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: var(--font-small);
+    text-transform: uppercase;
+  }
+  
+
+  .exploreLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 0 20px;
+    flex-grow: 1;
+  }
+  
+  .exploreLink {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: var(--font-small);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  .exploreLink span {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .exploreLink:hover span {
+    transform: translateX(5px); 
+  }
+  
+  .divider {
+    height: 30px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }

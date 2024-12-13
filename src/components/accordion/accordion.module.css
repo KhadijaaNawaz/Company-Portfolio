@@ -2,7 +2,6 @@
 
 .accordion_section .accordionItem {
   margin-bottom: 1rem;
-  border-radius: 8px;
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid var(--dark);

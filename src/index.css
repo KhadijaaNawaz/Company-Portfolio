@@ -5,7 +5,7 @@
   --font-large: 44px;
   --font-large-extra: 59px;
   --font-medium: 22px;
-  --font-small: 17px;
+  --font-small: 15px;
   --font-extra-small: 11px;
   --font-card-header:17px;
   --blue : #0073e6;
@@ -130,7 +130,7 @@ code {
   :root {
     --font-large: 24px;
     --font-medium: 14px;
-    --font-small: 12px;
+    --font-small: 10px;
     --font-card-header: 12px;
   }
 }

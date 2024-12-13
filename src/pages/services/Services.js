@@ -4,6 +4,8 @@ import homestyles from "../home/home.module.css";
 import Hero from "../../components/service-hero/ServiceHero.js";
 import SectionTitle from "../../components/section-title/SectionTitle";
 import Card from "../../components/card/Card.js";
+import IndustriesSection from "../../components/industries-section/IndustriesSection";
+import ExploreFurtherSection from "../../components/explore/Explore.js";
 import services from "./services.json";
 
 
@@ -66,6 +68,8 @@ const Services = () => {
           </p>
         </div>
         </section>
+        <IndustriesSection />
+        <ExploreFurtherSection />
       </div>
     </div>
   );
