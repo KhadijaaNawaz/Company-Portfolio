@@ -81,6 +81,7 @@ const Home = () => {
                 <FontAwesomeIcon icon={faArrowRight} />
               </span>
             </button>
+            
           </div>
           <div className={homestyles.right}>
              {/* <Bgimage backgroundSvg={svgIcon} foregroundImage={image} /> */}

@@ -6,15 +6,16 @@
   --font-large-extra: 59px;
   --font-medium: 22px;
   --font-small: 17px;
+  --font-extra-small: 11px;
   --font-card-header:17px;
   --blue : #0073e6;
   --primary: #1F2F28;
   --light-green: #4be296;
   --light-green-bg: #9be5c0;
+  --dark-rgba-10: rgba(17, 17, 17, 0.1);
   --dark-inverse: #FFF;
   --light-green-icon:#b6f0d3;
   --hover-color: #55a630;
-
   --dark-rgba-50: rgba(17, 17, 17, 0.5);
    
   /* --primary: #007437; */

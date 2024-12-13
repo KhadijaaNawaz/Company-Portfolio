@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "title": "Accounting",
+      "description": "Comprehensive accounting services tailored to your business needs for financial success.",
+      "buttonText": "VIEW DETAILS",
+      "imageUrl": "assets/Services/service-1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Tax Planning",
+      "description": "Expert tax planning to maximize savings and ensure compliance with tax regulations.",
+      "imageUrl": "assets/Services/service-2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Business Advisory",
+      "description": "Strategic business advisory to drive growth and enhance financial performance.",
+      "imageUrl": "assets/Services/service-3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Payroll Management",
+      "description": "Efficient payroll management to ensure timely and accurate employee compensation.",
+      "imageUrl": "assets/Services/service-4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Global Accounting",
+      "description": "Global accounting solutions to manage international finances and ensure compliance.",
+      "imageUrl": "assets/Services/service-5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Admin Services",
+      "description": "Comprehensive admin services to streamline operations and support your business growth.",
+      "imageUrl": "assets/Services/service-6.jpg"
+    }
+  ]
+  

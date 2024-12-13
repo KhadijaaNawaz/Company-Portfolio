@@ -39,7 +39,6 @@ const Services = () => {
           }}
           modules={[Navigation]}
           breakpoints={{
-            // When the screen width is greater than or equal to 768px, display 2 slides
             1100: {
               slidesPerView: 4,
             },
