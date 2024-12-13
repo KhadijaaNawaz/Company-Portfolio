@@ -15,8 +15,7 @@ const ServiceHero = () => {
             <span className={styles.breadcrumbActive}>SERVICES</span>
           </p>
         </div>
-
-        {/* Right Section */}
+        
         <div className={styles.servicesImage}>
           {/* <img
             src="https://via.placeholder.com/300" 
