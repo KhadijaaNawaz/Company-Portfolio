@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import Services from './pages/services/Services';
 import Accounting from './pages/accounting/Accounting';
+import Tax from './pages/tax/Tax';
 import './App.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Accounting" element={<Accounting />} />
+          <Route path="/Tax_Panning" element={<Tax />} />
         </Routes>
         <Footer />
       </Router>

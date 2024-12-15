@@ -8,13 +8,16 @@ const ServiceStructure = ({
   HeroComponent,
   WhatWeDoComponent,
   ExellenceComponent,
+  CardComponent,
 }) => {
   return (
     <div className={styles.structure_wrapper}>
       <div className={styles.structure_container}>
         <div className={styles.section30}>
-          {/* Render the passed components dynamically */}
           {ServiceListComponent}
+          {/* <div className={styles.structure_intro}>
+            {CardComponent}
+          </div> */}
         </div>
         <div className={styles.section70}>
           {HeroComponent}

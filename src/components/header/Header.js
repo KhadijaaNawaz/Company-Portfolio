@@ -24,7 +24,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header class={styles.header}>
+    <header className={styles.header}>
       <div className={styles.header_body}>
         <div className={styles.header_container}>
           <div className={styles.header_wrapper}>
@@ -94,17 +94,17 @@ const Header = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#" className={styles.header_dropdown_item}>
+                        <a href="/Tax_Panning"  className={styles.header_dropdown_item}>
                           Tax Planning
                         </a>
                       </li>
                       <li>
-                        <a href="#" className={styles.header_dropdown_item}>
+                        <a href="/Accounting"  className={styles.header_dropdown_item}>
                           Business Advisory
                         </a>
                       </li>
                       <li>
-                        <a href="#" className={styles.header_dropdown_item}>
+                        <a href="/Accounting"  className={styles.header_dropdown_item}>
                           Payroll Management
                         </a>
                       </li>

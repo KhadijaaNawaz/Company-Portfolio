@@ -192,6 +192,10 @@
   display: flex;
   flex-direction: column;
 }
+.jobaway
+{
+  color: var(--light-green);
+}
 
 .footer_item .footer_info .footer_label {
   font-size: 14px;

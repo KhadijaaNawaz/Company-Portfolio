@@ -197,7 +197,7 @@ const Footer = () => {
           >
             <div className={styles.copyright}>
               <p>
-                Copyright © 2024 <a href="#">JobAway</a>. All rights reserved.
+                Copyright © 2024 <a href="#" className={styles.jobaway}>JobAway</a>. All rights reserved.
               </p>
             </div>
             <ul className={styles.footer_social_links}>
