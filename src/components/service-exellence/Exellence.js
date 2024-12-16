@@ -3,31 +3,37 @@ import styles from "./exellence.module.css";
 import Stats from "../stats/Stats.js";
 
 const Exellence = ({ title, stats, imageSrc }) => {
-    const getRandomHighlightedWords = (text) => {
-        const words = text.split(/(\s+)/);
-        const highlightIndices = new Set();
+  const getRandomHighlightedWords = (text) => {
+    const words = text.split(/(\s+)/);
+    const highlightIndices = new Set();
 
-        while (highlightIndices.size < 2) {
-          const randomIndex = Math.floor(Math.random() * words.length);
+   
+    const wordsOnly = words.filter((word) => word.trim() !== "");
 
-          if (
-            !highlightIndices.has(randomIndex) &&
-            !highlightIndices.has(randomIndex - 1) && 
-            !highlightIndices.has(randomIndex + 1)    
-          ) {
-            highlightIndices.add(randomIndex);
-          }
+    while (highlightIndices.size < 2) {
+        const randomIndex = Math.floor(Math.random() * wordsOnly.length);
+        
+       
+        const originalIndex = words.indexOf(wordsOnly[randomIndex]);
+
+        if (
+            !highlightIndices.has(originalIndex) &&
+            !highlightIndices.has(originalIndex - 1) && 
+            !highlightIndices.has(originalIndex + 1)    
+        ) {
+            highlightIndices.add(originalIndex);
         }
+    }
 
-        return words.map((word, index) => (
-          <span
+    return words.map((word, index) => (
+        <span
             key={index}
             className={highlightIndices.has(index) ? styles.excellence_highlight : ""}
-          >
+        >
             {word}
-          </span>
-        ));
-      };
+        </span>
+    ));
+};
 
   return (
     <section className={styles.excellence_section}>

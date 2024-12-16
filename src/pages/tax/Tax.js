@@ -1,19 +1,15 @@
-// Accounting.js
 import React from "react";
-import accountingstyles from "./accounting.module.css";
 import Hero from "../../components/service-hero/ServiceHero.js";
 import ServiceList from "../../components/services-list/ServiceList.js";
-import WhatWeDo from "../../components/what-we-do/WhatWeDo";
+import WhatWeDo from "../../components/what-we-do/WhatWeDo.js";
 import Exellence from "../../components/service-exellence/Exellence.js";
 import ExploreFurtherSection from "../../components/explore/Explore.js";
 import Structure from "../../components/service-structure/ServiceStructure.js";
-import Card from "../../components/card/Card.js";
-
 
 const Accounting = () => {
   const breadcrumbs = [
     { text: "HOME", isActive: false },
-    { text: "ACCOUNTING", isActive: true },
+    { text: "TAX PLANNING", isActive: true },
   ];
 
   const services = [
@@ -38,13 +34,13 @@ const Accounting = () => {
   };
 
   return (
-    <div className={accountingstyles.accounting_page}>
+    <div >
       <Hero
           buttonText="WHAT WE DO"
-          title="Accounting"
+          title="Tax Planning"
           breadcrumbs={breadcrumbs}
         />
-      <div className={accountingstyles.accounting_wrapper}>
+      <div>
       
         <Structure 
           ServiceListComponent={<ServiceList />}
@@ -57,13 +53,6 @@ const Accounting = () => {
               stats={stats}
             />
           }
-          CardComponent={ <Card
-            eventData={{
-              title: "Laura Mitchell",
-              description: "CEO & Founder",
-              imageUrl: "assets/Team/team-3.jpg",
-            }}
-          />}
           ExellenceComponent={<Exellence title="Delivering Excellence Through Expertise and Dedication" stats={stats2} />}
         />
       </div>
