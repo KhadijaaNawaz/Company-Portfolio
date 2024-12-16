@@ -23,9 +23,9 @@ const WhatWeDo = ({ title, description, services, image, stats }) => {
         </div>
         <div className={styles.what_visual}>
           <img src={image} alt="Service illustration" className={styles.what_image} />
-          <div className={styles.statsWrapper}> 
+          {/* <div className={styles.statsWrapper}> 
             <Stats stats={stats} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
