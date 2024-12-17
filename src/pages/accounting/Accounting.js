@@ -8,7 +8,6 @@ import Exellence from "../../components/service-exellence/Exellence.js";
 import ExploreFurtherSection from "../../components/explore/Explore.js";
 import Structure from "../../components/service-structure/ServiceStructure.js";
 import ProfileCard from "../../components/team-member/TeamMember.js";
-import CallUs from "../../components/call-us/CallUs.js";
 
 
 const Accounting = () => {
@@ -73,9 +72,6 @@ const Accounting = () => {
         />
       </div>
       <ExploreFurtherSection />
-      <CallUs />
-     
-
     </div>
   );
 };

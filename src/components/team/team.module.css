@@ -1,0 +1,178 @@
+/* Wrapper Styles */
+.team_wrapper {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #F7F0E7;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.team_wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../public/assets/waves.svg');
+  background-size: cover;
+  background-position: center left;
+  opacity: 0.05;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* Team Content */
+.team_content {
+  width: 100%;
+  overflow-x: hidden;
+  margin-left: 7%;
+  text-align: left;
+}
+
+/* Slider Navigation */
+.slider_navigation {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 45px;
+}
+
+/* Navigation Circle */
+.nav_circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.nav_circle:hover {
+  background-color: var(--light-green);
+}
+
+.nav_circle svg {
+  color: var(--gray);
+  font-size: var(--font-small);
+}
+
+/* Slider Bottom */
+.slider_bottom {
+  bottom: 0;
+  width: 80%;
+  color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-small);
+  align-items: center;
+  text-align: center;
+  margin: 40px 16px;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Media Query for 788px */
+@media (max-width: 788px) {
+  .team_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+  }
+  .highlighted_heading {
+    width: 70% !important;
+  }
+
+  .team_content {
+    margin-left: 0;
+    text-align: center;
+    width: 70%;
+  }
+
+  .slider_navigation {
+    justify-content: center;
+  }
+
+  .nav_circle {
+    margin: 0 5px;
+  }
+
+  
+}
+
+/* Media Query for 480px */
+@media (max-width: 480px) {
+  .nav_circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav_circle svg {
+    font-size: var(--font-small);
+  }
+
+  .slider_bottom {
+    margin: 50px 0px;
+  }
+}
+
+
+.highlighted_heading {
+  font-family: Arial, sans-serif;
+  font-size: var(--font-large);
+  font-weight: bolder;
+  color: #000;
+  text-align: center;
+  width: 60%;
+  line-height: 1.4;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.highlight {
+  background-color: var(--light-green);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.hiring_button {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.professional_text {
+  margin: 0;
+  color: var(--);
+  font-size: 16px;
+}
+
+
+.apply_link {
+  color:var(--light-green);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.apply_link:hover {
+  color: var(--primary);
+}

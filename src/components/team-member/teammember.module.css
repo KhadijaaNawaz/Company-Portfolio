@@ -1,7 +1,7 @@
 .team_our_team {
-    padding: 30px 0 50px;
+    padding: 30px 20px 50px;
     margin-bottom: 30px;
-    background-color: #f7f5ec;
+    background-color: #F7F7FF;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -10,8 +10,8 @@
 
 .team_picture {
     display: inline-block;
-    height: 130px;
-    width: 130px;
+    height: 190px;
+    width: 190px;
     margin-bottom: 50px;
     z-index: 1;
     position: relative;
@@ -63,7 +63,7 @@
 
 .team_team_content .team_title {
     display: block;
-    font-size: 15px;
+    font-size: 12px;
     color: #4e5052;
     text-transform: capitalize;
 }
@@ -89,7 +89,7 @@
 
 .team_social li a {
     display: block;
-    padding: 10px;
+    padding: 6px;
     font-size: 17px;
     color: var(--primary); 
     transition: all 0.3s ease 0s;

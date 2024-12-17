@@ -8,12 +8,12 @@
     color: #ffffff;
     margin: 0 auto;
     max-width: 90%;
-    margin-top: 30px;
+    margin-top: 70px;
   }
 
  .exploreGradient {
-    background: linear-gradient(to right, #2b9569, #376f51); 
-    padding: 20px 50px;
+    background: linear-gradient(to right, #2cb67c, #3e7558); 
+    padding: 30px 50px;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
     text-align: end;
@@ -63,7 +63,7 @@
     width: 1px;
     background-color: rgba(255, 255, 255, 0.5);
   }
-  /* Media Query for screens <= 600px */
+
 @media (max-width: 600px) {
  
   .exploreContainer {
@@ -75,9 +75,10 @@
       width: 100%;
       border-radius: 10px; 
       text-align: center; 
-  }
+    padding: 20px 50px;
 
-  .exploreLinks {
+  }
+.exploreLinks {
       flex-direction: column;
       gap: 10px;
   }

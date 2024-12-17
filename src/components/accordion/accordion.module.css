@@ -88,6 +88,12 @@
 .accordion_section {
   padding: 1rem;
 }
+@media (max-width: 714px) 
+{
+  .accordion_section {
+    padding: 0rem;
+  }
+}
 
 .accordion_item::before {
   content: "▼"; 

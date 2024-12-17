@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Michele Miller",
+    "title": "Web Developer",
+    "image": "assets/Team/team-3.jpg",
+    "socialLinks": [
+      { "platform": "facebook", "url": "https://facebook.com" },
+      { "platform": "twitter", "url": "https://twitter.com" },
+      { "platform": "linkedin", "url": "https://linkedin.com" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Michele Miller",
+    "title": "Web Developer",
+    "image": "assets/Team/team-4.jpg",
+    "socialLinks": [
+      { "platform": "facebook", "url": "https://facebook.com" },
+      { "platform": "twitter", "url": "https://twitter.com" },
+      { "platform": "linkedin", "url": "https://linkedin.com" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Michele Miller",
+    "title": "Web Developer",
+    "image": "assets/Team/team-5.jpg",
+    "socialLinks": [
+      { "platform": "facebook", "url": "https://facebook.com" },
+      { "platform": "twitter", "url": "https://twitter.com" },
+      { "platform": "linkedin", "url": "https://linkedin.com" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Michele Miller",
+    "title": "Web Developer",
+    "image": "assets/Team/team-6.jpg",
+    "socialLinks": [
+      { "platform": "facebook", "url": "https://facebook.com" },
+      { "platform": "twitter", "url": "https://twitter.com" },
+      { "platform": "linkedin", "url": "https://linkedin.com" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Michele Miller",
+    "title": "Web Developer",
+    "image": "assets/Team/team-7.jpg",
+    "socialLinks": [
+      { "platform": "facebook", "url": "https://facebook.com" },
+      { "platform": "twitter", "url": "https://twitter.com" },
+      { "platform": "linkedin", "url": "https://linkedin.com" }
+    ]
+  }
+]
