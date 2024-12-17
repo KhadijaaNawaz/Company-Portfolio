@@ -7,7 +7,8 @@ import WhatWeDo from "../../components/what-we-do/WhatWeDo";
 import Exellence from "../../components/service-exellence/Exellence.js";
 import ExploreFurtherSection from "../../components/explore/Explore.js";
 import Structure from "../../components/service-structure/ServiceStructure.js";
-import Card from "../../components/card/Card.js";
+import ProfileCard from "../../components/team-member/TeamMember.js";
+import CallUs from "../../components/call-us/CallUs.js";
 
 
 const Accounting = () => {
@@ -57,17 +58,23 @@ const Accounting = () => {
               stats={stats}
             />
           }
-          CardComponent={ <Card
-            eventData={{
-              title: "Laura Mitchell",
-              description: "CEO & Founder",
-              imageUrl: "assets/Team/team-3.jpg",
-            }}
-          />}
+          ProfileCard={<ProfileCard
+            name="Michele Miller"
+            title="Web Developer"
+            image="assets/Team/team-3.jpg"
+            socialLinks={[
+              { platform: "facebook", url: "https://facebook.com" },
+              { platform: "twitter", url: "https://twitter.com" },
+              { platform: "linkedin", url: "https://linkedin.com" },
+            ]}
+          />
+          }
           ExellenceComponent={<Exellence title="Delivering Excellence Through Expertise and Dedication" stats={stats2} />}
         />
       </div>
       <ExploreFurtherSection />
+      <CallUs />
+     
 
     </div>
   );

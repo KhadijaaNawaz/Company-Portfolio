@@ -1,5 +1,3 @@
-/* serviceslist.module.css */
-
 .servicesContainer {
     background-color: #F4F4F4;
     border-radius: 10px;
@@ -38,6 +36,7 @@
   
   .serviceItem:hover {
     border-color: var(--light-green);
+    
   }
   
   .active {
@@ -56,7 +55,10 @@
     font-size:var(--font-small);
     color: var(--dark-rgba-50);
   }
-  
+  .serviceText:hover {
+    color: var(--light-green);
+    
+  }
   .active .serviceText {
     color: black;
     font-weight: bold;
@@ -66,7 +68,7 @@
   .activeIcon {
     font-size: 0.7rem;
     color: #fff;
-    background-color: var(--light-green);
+    background-color: #c0bcbc;
     border-radius: 50%;
     font-weight: bold;
     padding: 8px;

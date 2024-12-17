@@ -1,0 +1,40 @@
+.client_container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    margin-top: 30px;
+   
+  }
+  
+  .joinUsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    box-shadow: 4px dark;
+  }
+  
+  .icon {
+    color: var(--light-green);
+    margin-right: 4px;
+    font-size: var(--font-medium);
+
+  }
+  
+  .boldText {
+    font-weight: bold;
+    margin-right: 4px;
+    font-size: var(--font-medium);
+  }
+  
+  .clientsText {
+    color: var(--dark-rgba-50);
+    margin-right: 8px;
+    font-size: var(--font-medium);
+
+  }
+  
+  .stars {
+    color: #ffa500; 
+  }
+  

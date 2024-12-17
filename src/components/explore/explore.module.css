@@ -63,3 +63,26 @@
     width: 1px;
     background-color: rgba(255, 255, 255, 0.5);
   }
+  /* Media Query for screens <= 600px */
+@media (max-width: 600px) {
+ 
+  .exploreContainer {
+      flex-direction: column; 
+      padding: 20px;
+  }
+
+  .exploreGradient {
+      width: 100%;
+      border-radius: 10px; 
+      text-align: center; 
+  }
+
+  .exploreLinks {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .divider {
+     display: none;
+  }
+}

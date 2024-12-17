@@ -49,11 +49,21 @@
     width: 80%;
     padding: 10px;
   }
- .structure_intro {
-  background-color: var(--primary);
-  border-radius: 10px;
-  padding: 30px;
-  margin-top: 20px;
-  width: 90%;
-  font-family: 'Arial', sans-serif;
-}
+  .structure_intro {
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    width: 90%;
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .structure_intro {
+      padding: 24px; 
+      width: 70%; 
+    }
+  }
+  

@@ -1,9 +1,9 @@
 .accordion_section .accordionItem {
-  margin-bottom: 0.5rem; /* Reduced margin for more compactness */
+  margin-bottom: 0.5rem; 
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid var(--dark);
-  transition: all 0.2s ease-in-out; /* Reduced transition time for smoother effect */
+  transition: all 0.2s ease-in-out; 
 }
 
 .accordion_section .accordionItem::after {
@@ -25,7 +25,7 @@
 
 .accordionHeader {
   background: #fff;
-  padding: 1rem 1rem; /* Reduced padding for a more compact look */
+  padding: 1rem 1rem; 
   font-size: var(--font-card-header);
   font-weight: bold;
   cursor: pointer;
@@ -39,16 +39,16 @@
   overflow: hidden;
   max-height: 0; 
   opacity: 0; 
-  padding: 0 1rem 0.5rem; /* Adjusted padding for smoother transition */
+  padding: 0 1rem 1.5rem; 
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
   text-align: left;
   color: var(--gray);
   font-weight: 400;
-  transition-delay: 0.2s; /* Adds a slight delay for smoother appearance */
+  transition-delay: 0.2s; 
 }
 
 .accordion_section .accordionContent.show {
-  max-height: 200px; /* Smooth expansion */
+  max-height: 200px; 
   opacity: 1;
 }
 
