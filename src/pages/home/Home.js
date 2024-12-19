@@ -7,6 +7,8 @@ import Experience from "../../components/experience/Experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import HeroSection from "../../components/hero/Hero";
+import accordionData from '../../data/accordionData';  
+
 import Bgimage from "../../components/image/Image";
 
 const Home = () => {
@@ -110,7 +112,8 @@ const Home = () => {
             </button>
           </div>
           <div className={homestyles.right}>
-            <Accordion />
+          <Accordion data={accordionData} />
+
           </div>
         </div>
       </section>
