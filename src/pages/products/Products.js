@@ -18,17 +18,14 @@ const Products = () => {
     {
       icon: "/assets/global.png",
       title: "Global Accounting",
-      description: "We provide top-notch accounting solutions tailored for businesses globally.",
     },
     {
       icon: "/assets/tax.png",
       title: "Tax Consulting",
-      description: "Our experts offer tax consulting services to optimize your business taxes.",
     },
     {
       icon: "/assets/admin.png",
       title: "Admin Services",
-      description: "Efficient administrative services to streamline your business operations.",
     },
   ];
 
