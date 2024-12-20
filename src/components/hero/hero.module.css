@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: flex-start;
   background-image: url('../../../public/assets/bg.png');
+  /* background-color: #082415; */
   background-size: cover;
   background-position: center;
   border-radius: 8px;
