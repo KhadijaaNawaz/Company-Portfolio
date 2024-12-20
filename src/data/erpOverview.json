@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "What is NetSuite Financial Management?",
+      "description": "NetSuite financial management solutions accelerate daily financial transactions, reduce budgeting and forecasting cycles, and ensure compliance.",
+      "image": "/images/netsuite-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Efficiently Manage Your Financial Processes",
+      "description": "From bank reconciliation and assets management to receivables, payables, and more, NetSuite helps you automate complex financial processes.",
+      "image": "/images/netsuite-2.png"
+    },
+    {
+      "id": 3,
+      "title": "Drive Business Strategy and Growth",
+      "description": "Using NetSuite financial, headcount, and operational data, quickly and easily produce budgets and forecasts.",
+      "image": "/images/netsuite-3.png"
+    }
+  ]
+  
