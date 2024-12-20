@@ -13,7 +13,7 @@
     line-height: 1.2;
 
     font-weight: 700;
-    color: #000000; 
+    color: dark; 
     margin-bottom: 20px;
   }
   
@@ -38,6 +38,6 @@
   
   .showcaseIconText {
     font-size: var(--font-small);
-    color: #000000;
+    color: var(--dark-rgba-50);
   }
   
