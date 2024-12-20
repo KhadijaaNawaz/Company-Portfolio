@@ -1,0 +1,77 @@
+.contentCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    background: #f9f9f9;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contentCardContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.5s ease-out, background-color 0.4s ease-out;
+    border-radius: 0px;
+    z-index: 0;
+  }
+  
+  .contentCardContainer:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+  }
+  
+  .contentCardContainer:hover::before {
+    transform: scaleY(1);
+  }
+  
+  .contentCardContent {
+    position: relative;
+    z-index: 1;
+    color: #333;
+    transition: color 0.4s ease-in-out, transform 0.3s ease-out;
+  }
+  
+  .contentCardContent h1 {
+    font-size: var(--font-card-header);
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #333;
+    transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .contentCardContent p {
+    font-size: var(--font-small);
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .contentCardContainer:hover .contentCardContent {
+    color: #fff;
+  }
+  
+  .contentCardContainer:hover .contentCardContent h1 {
+    color: #fff;
+   
+  }
+  
+  .contentCardContainer:hover .contentCardContent p {
+    color: #f1f1f1;
+   
+  }
+  

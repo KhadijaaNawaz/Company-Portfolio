@@ -1,0 +1,111 @@
+.accordion_section .accordionItem {
+  margin-bottom: 0.5rem; 
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--dark);
+  transition: all 0.2s ease-in-out; 
+}
+
+.accordion_section .accordionItem::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--dark);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion_section .accordionItem:hover::after {
+  transform: scaleX(1);
+}
+
+.accordionHeader {
+  background: var(--light);
+  padding: 1rem 1rem; 
+  font-size: var(--font-card-header);
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease, padding 0.3s ease, transform 0.2s ease;
+}
+
+.accordionContent {
+  overflow: hidden;
+  max-height: 0; 
+  opacity: 0; 
+  padding: 0 1rem 1.5rem; 
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
+  text-align: left;
+  color: var(--gray);
+  font-weight: 400;
+  transition-delay: 0.2s; 
+}
+
+.accordion_section .accordionContent.show {
+  max-height: 200px; 
+  opacity: 1;
+}
+
+.accordion_section .icon {
+  transition: transform 0.2s ease-in-out, color 0.3s ease;
+}
+
+.accordion_section .icon.rotate {
+  transform: rotate(180deg);
+  /* color: var(--dark-green); */
+}
+
+.accordionHover {
+  color: var(--dark);
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.accordionHover::before {
+  background: var(--hover-color);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.accordionHover:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.accordion_section {
+  padding: 1rem;
+}
+@media (max-width: 714px) 
+{
+  .accordion_section {
+    padding: 0rem;
+  }
+}
+
+.accordion_item::before {
+  content: "▼"; 
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--dark);
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion_item.open::before {
+  transform: translateY(-50%) rotate(180deg);
+}

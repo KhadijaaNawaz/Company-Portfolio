@@ -1,0 +1,41 @@
+.client_container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    
+  }
+  
+  .joinUsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    box-shadow: 8px #000000;
+  }
+  
+  .icon {
+    color: var(--primary);
+    margin-right: 7px;
+    font-size: var(--font-medium);
+
+  }
+  
+  .boldText {
+    font-weight: bold;
+    margin-right: 4px;
+    font-size: var(--font-small);
+  }
+  
+  .clientsText {
+    color: var(--dark-rgba-50);
+    margin-right: 8px;
+    font-size: var(--font-small);
+    font-weight: bold;
+
+
+  }
+  
+  .stars {
+    color: #eeeb25; 
+  }
+  

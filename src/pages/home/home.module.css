@@ -1,0 +1,214 @@
+.home_page {
+  background-color: var(--light);
+}
+
+.section_wrapper {
+  padding: 2rem 1rem;
+  background-color: var(--light);
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.icon
+{
+  background-color: var(--light-green-icon);
+  border-radius: 50%;
+ 
+}
+.column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.text_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: .25rem !important;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--gray);
+  text-align: left;
+  padding-right: 10px;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 1rem;
+  }
+
+  .column {
+    flex: 1 1 100%;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+
+/****** Why Choose Us *******/
+
+.why_us_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100vw;
+  margin-top: 50px;
+}
+
+.why_us_container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact_btn {
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 20px 0px;
+  border-radius: 30px;
+  text-align: center;
+  color: var(--light);
+  background: linear-gradient(135deg, var(--dark), #333); 
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact_btn::after {
+  content: "";
+  position: absolute;
+ 
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease-out, opacity 0.6s ease-out;
+  opacity: 0;
+}
+
+.contact_btn:hover::after {
+  transform: translate(-50%, -50%) scale(1.5); 
+  opacity: 1;
+}
+
+.contact_btn:hover {
+ 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.contact_btn .arrow {
+  padding-left: 10px;
+  display: inline-block; 
+  transition: transform 0.3s ease; 
+}
+
+.contact_btn:hover .arrow {
+  transform: translateX(7px) scaleX(1); 
+}
+
+.left {
+  width: 50%;
+  text-align: left ;
+}
+
+.right {
+  width: 50%;
+}
+@media (max-width: 968px) {
+ 
+  .why_us_wrapper {
+    display: block; 
+  width: 80%; 
+  margin: 0 auto; 
+  text-align: center; 
+  padding: 2rem;
+  margin-top: 20px;
+  }
+
+  .why_us_container {
+    display: block;
+    width: 100%;
+  }
+
+  .left, .right {
+    width: 100%; 
+    text-align: center; 
+  }
+
+}
+
+.contact_btn:before, 
+.contact_btn:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.contact_btn:before {
+	right: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.contact_btn:after {
+	left: 0;
+}
+
+.contact_btn:hover:before,
+.contact_btn:hover:after {
+	width: 100%;
+}
+
+

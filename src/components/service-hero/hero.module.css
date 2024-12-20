@@ -1,0 +1,145 @@
+
+.servicesSection {
+    width: 100vw;
+  overflow: hidden;
+  }
+  
+  .servicesContainer {
+    width: 90%;
+    height: 55vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../../../public/assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    padding: 100px;
+    color: var(--light);
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .servicesText {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: var(--light);
+    max-width: 50%;
+  }
+  
+  .servicesBtn {
+    background-color: var(--hover-color);
+    color: var(--dark);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: default;
+    margin-bottom: 10px;
+    width: 70%;
+  }
+  
+  .servicesTitle {
+    font-size: var(--font-large);
+    color: var(--light);
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .servicesBreadcrumb {
+    color: var(--light);
+    font-size: var(--font-extra-small);
+    display: flex;
+    gap: 5px;
+  }
+  
+  .breadcrumbArrow {
+    color: var(--light);
+  }
+  
+  .breadcrumbActive {
+    color: var(--light-green);
+  }
+  
+  .servicesImage {
+    max-width: 45%;
+    position: relative;
+  }
+  
+  .servicesImg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .servicesContainer {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .servicesText,
+    .servicesImage {
+      max-width: 100%;
+    }
+  }
+  
+   @media screen and (max-width: 1024px) {
+    .servicesContainer {
+      padding: 40px 20px; 
+      gap: 30px;
+    }
+  
+    .servicesText {
+      max-width: 60%; 
+    }
+  
+    .servicesImage {
+      max-width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .servicesContainer {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 15px; 
+      gap: 20px;
+    }
+  
+    .servicesText,
+    .servicesImage {
+      max-width: 100%;
+    }
+  
+    .servicesText {
+      gap: 10px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .servicesBtn {
+      font-size: 12px;
+      padding: 6px 12px; 
+    }
+  
+    .servicesTitle {
+      font-size: 24px; 
+    }
+  
+    .servicesBreadcrumb {
+      font-size: 12px; 
+    }
+  
+    .servicesContainer {
+      padding: 20px 10px; 
+    }
+  }
+  
