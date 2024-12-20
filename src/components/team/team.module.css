@@ -142,7 +142,7 @@
 }
 
 .highlight {
-  background-color: var(--light-green);
+  background-color: var(--hover-color);
   display: inline-block;
   padding: 0 8px;
   border-radius: 4px;
@@ -168,9 +168,10 @@
 
 
 .apply_link {
-  color:var(--light-green);
+  color:var(--dark-green);
   text-decoration: underline;
   font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
 
 .apply_link:hover {

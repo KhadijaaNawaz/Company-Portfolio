@@ -2,7 +2,7 @@
 .exploreContainer {
     display: flex;
     align-items: center;
-    background-color: #338a5b;
+    background-color: var(--dark-green);
     border-radius: 10px;
     overflow: hidden;
     color: #ffffff;
@@ -12,7 +12,8 @@
   }
 
  .exploreGradient {
-    background: linear-gradient(to right, #2cb67c, #3e7558); 
+    background: rgb(0,116,55);
+    background: linear-gradient(90deg, rgba(0,116,55,0.8156512605042017) 36%, rgba(62, 173, 114, 0.821) 100%);
     padding: 30px 50px;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;

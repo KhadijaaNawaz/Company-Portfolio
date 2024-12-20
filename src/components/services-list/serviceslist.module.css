@@ -35,7 +35,7 @@
   }
   
   .serviceItem:hover {
-    border-color: var(--light-green);
+    border-color: var(--dark-green);
     
   }
   
@@ -56,7 +56,7 @@
     color: var(--dark-rgba-50);
   }
   .serviceText:hover {
-    color: var(--light-green);
+    color: var(--dark-green);
     
   }
   .active .serviceText {
@@ -76,7 +76,7 @@
   }
   
   .activeIcon {
-    background-color: var(--light-green);
+    background-color: var(--dark-green);
   }
   
  

@@ -13,22 +13,22 @@ const HeroSection = () => {
       id: 1,
       backgroundImage: "url('../../../public/assets/bg.png')",
       subtitle: "Empower Your Business",
-      title: "Innovating the Future with ERP and CMIS Solutions",
-      description: "Revolutionizing workflows and driving efficiency with our innovative IT solutions",
+      title: "Choosing the Perfect ERP Made Simple",
+      description: "Discover how our ERP solutions can transform your business operations and streamline success.",
     },
     {
       id: 2,
       backgroundImage: "url('../../../public/assets/bg.png')",
       subtitle: "Transform Industries",
-      title: "Innovating the Future with ERP and CMIS Solutions",
-      description: "Revolutionizing workflows and driving efficiency with our innovative IT solutions",
+      title: "What’s Your Business Priority Today?",
+      description: "Whether it's enhancing productivity, optimizing workflows, or managing content, we’ve got the solutions to make it happen.",
     },
     {
       id: 3,
       backgroundImage: "url('../../../public/assets/bg.png')",
       subtitle: "Innovate the Future",
-      title: "Innovating the Future with ERP and CMIS Solutions",
-      description: "Revolutionizing workflows and driving efficiency with our innovative IT solutions",
+      title: "Your Daily Tech Checklist, Simplified",
+      description: "From ERP to CMIS, we deliver tools designed to meet your evolving business needs, every step of the way.",
     },
   ];
 

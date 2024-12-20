@@ -5,7 +5,6 @@ import homestyles from "../home/home.module.css";
 import SectionTitle from "../../components/section-title/SectionTitle";
 import Accordion from "../../components/accordion/Accordion.js";
 import TeamSection from "../../components/team/Team.js";
-import ClientRating from "../../components/client-rating/ClientRating.js";
 import ExploreFurtherSection from "../../components/explore/Explore.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -80,24 +79,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className={homestyles.section_wrapper}>
-        <div className={homestyles.container}>
-          {data.map((item, index) => (
-            <div key={index} className={homestyles.column}>
-              <img
-                src={item.icon}
-                alt={item.title}
-                className={homestyles.icon}
-              />
-              <div className={homestyles.text_content}>
-                <h3 className={homestyles.title}>{item.title}</h3>
-                <p className={homestyles.description}>{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-      <ClientRating/>
       <section className={homestyles.why_us_wrapper}>
         <div className={homestyles.why_us_container}>
           <div className={homestyles.left}>

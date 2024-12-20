@@ -14,13 +14,13 @@
     line-height: 1;
   }
   .experience_mark {
-    color: #000;
+    color: var(--dark);
     position: relative;
     line-height: 30px;
     font-size: var(--font-large-extra);
     letter-spacing: -0.05rem;
     padding: 0;
-    background-color: var(--light-green-bg);
+    background-color: var(--hover-color);
   
     display: inline-block;
   }
@@ -32,7 +32,7 @@
     left: 0;
     height: 50%; 
     width: 100%; 
-    background-color: var(--light-green-bg); 
+    background-color: var(--hover-color); 
     z-index: -1; 
   }
   
