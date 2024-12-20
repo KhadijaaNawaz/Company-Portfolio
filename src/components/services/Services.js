@@ -57,6 +57,7 @@ const Services = () => {
           {services.map((service) => (
             <SwiperSlide key={service.id}>
               <div className={styles.card}>
+                {/* <img src='/assets/Services/service-1.jpg' /> */}
                 <h3>{service.title}</h3>
                 <p>{truncateText(service.description, 250)}</p>
                 {/* Learn More Button */}
@@ -79,7 +80,7 @@ const Services = () => {
         <div className={styles.slider_bottom}>
           <p>
             <FontAwesomeIcon icon={faClock} style={{ marginRight: '10px', fontSize: '20px' }} />
-            24/7 Availability - Round-the-clock support for all your accounting needs, anytime.
+            24/7 Support – Always Here to Assist with Your IT and Software Needs, Anytime, Anywhere.
           </p>
         </div>
       </div>

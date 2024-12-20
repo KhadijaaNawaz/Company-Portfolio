@@ -1,5 +1,5 @@
 .header {
-    background-color: #fff;
+    background-color: var(--light);
     padding: 20px 1rem;
     position: relative;
     z-index: 1030;
@@ -23,7 +23,7 @@
 
 .header_wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     padding: 0.5rem 0;
@@ -42,21 +42,22 @@
 .header_nav_list {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 25px;
     width: 100%;
     justify-content: center;
 }
 
 .phone_link,
 .header_nav_list a {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: -0.6px;
     color: var(--dark);
+    transition: 0.3s ease-in-out;
 }
 
 .header_nav_link.active {
-    color: var(--dark-rgba-50) !important;
+    color: var(--dark-green) !important;
 }
 
 .header_nav_link:hover {
@@ -82,7 +83,7 @@
 .header_dropdown_menu {
     list-style: none;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--light);
     color: #525151;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     display: none;
@@ -106,12 +107,13 @@
     border-bottom: 1px solid var(--grey-100);
     color: var(--default);
     font-size: 0.99em;
-    font-weight: 400;
+    font-weight: 500;
     padding: 6px 18px 6px 18px;
     position: relative;
     text-transform: none;
     text-decoration: none;
     letter-spacing: -0.5px;
+    transition: 0.3s ease-in-out;
 }
 
 .header_dropdown_item:hover {
@@ -140,7 +142,7 @@
 
 .btn_quote {
     background-color: #007bff;
-    color: white;
+    color: var(--light);
     padding: 8px 15px;
     border-radius: 25px;
     text-decoration: none;
@@ -162,13 +164,13 @@
 }
 
 .phone_icon {
-    max-width: 24px;
+    max-width: 20px;
     height: auto;
 }
 
 .phone_link {
     padding-right: 25px;
-    font-size: 18px;
+    font-size: 15px;
     color: #333;
     text-decoration: none;
     display: flex;
@@ -199,7 +201,7 @@
 
 @media (min-width: 1400px) {
     .header_col_logo {
-        width: 25%;
+        width: 15%;
     }
 }
 

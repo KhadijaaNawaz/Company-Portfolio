@@ -1,28 +1,28 @@
 [
     {
       "id": 1,
-      "title": "Customer Success",
-      "description": "NetSuite Education Services provides expert education and training to increase your users’ proficiency with NetSuite. A variety of learning options, including more than 100 on-demand courses, certifications and live training opportunities tailored to your specific needs help to develop a user base that is equipped with the tools and knowledge needed to boost NetSuite productivity."
+      "title": "Custom Software Development",
+      "description": "From concept to deployment, we build scalable, high-performance software that enhances productivity, streamlines processes, and supports growth. Whether you need a mobile app, web application, or complex enterprise system, our team of expert developers will deliver a solution that’s built for your business."
     },
     {
       "id": 2,
-      "title": "Financial Services",
-      "description": "Our financial services provide expert solutions for managing your organization's budgets, investments, and cash flow. With tailored strategies and advanced tools, our services are designed to ensure your organization's financial health and sustainability."
+      "title": "ERP Solution Integration",
+      "description": "Our ERP Solution Integration service helps businesses integrate industry-leading ERP systems seamlessly into their existing workflows. We focus on ensuring smooth data flow, automation of key processes, and real-time visibility across departments, including finance, operations, and supply chain. Our ERP solutions enhance efficiency, reduce costs, and provide the insights you need to make data-driven decisions. Whether you’re looking to optimize your current system or implement a new one, we guide you through every step of the integration process."
     },
     {
       "id": 3,
-      "title": "Technical Support",
-      "description": "Our 24/7 technical support ensures that your systems are always up and running. We provide troubleshooting, software updates, and proactive monitoring to minimize downtime and keep your operations efficient."
+      "title": "CMIS Setup and Configuration",
+      "description": "Managing content effectively is critical for business success. Our CMIS Setup and Configuration service allows you to organize, store, and retrieve content with ease.From setup to customization, we help businesses take full advantage of Content Management Information Systems (CMIS), allowing you to simplify document workflows, improve collaboration, and maintain a secure content repository that grows with your business."
     },
     {
       "id": 4,
-      "title": "Technical Support",
-      "description": "Our 24/7 technical support ensures that your systems are always up and running. We provide troubleshooting, software updates, and proactive monitoring to minimize downtime and keep your operations efficient."
+      "title": "Cloud-Based Solutions",
+      "description": "We help businesses transition to cloud platforms, improving accessibility, collaboration, and data security. Our cloud solutions provide a cost-effective way to scale your business without the complexity of traditional IT infrastructure. Whether it's a cloud-based ERP, document storage, or custom software, we ensure your systems are optimized for the cloud, enabling seamless remote work, improved disaster recovery, and real-time data access."
     },
     {
       "id": 5,
-      "title": "Technical Support",
-      "description": "Our 24/7 technical support ensures that your systems are always up and running. We provide troubleshooting, software updates, and proactive monitoring to minimize downtime and keep your operations efficient."
+      "title": "Ongoing Maintenance",
+      "description": "we believe that great service doesn’t end after implementation. Our Ongoing Support and Maintenance services ensure your systems continue to run smoothly and evolve with your business needs. From regular updates and bug fixes to troubleshooting and performance monitoring, we provide reliable support for all your IT infrastructure. Our dedicated team is available whenever you need assistance, offering proactive solutions to minimize downtime and keep your operations running at peak performance."
     }
   ]
   

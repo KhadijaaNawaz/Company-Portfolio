@@ -61,7 +61,6 @@ const Header = () => {
                     </Link>
                   </li>
 
-                  {/* Services */}
                   <li
                     className={`${styles.dropdown} ${
                       dropdown_open ? styles.open : ""
@@ -111,64 +110,82 @@ const Header = () => {
                     </ul>
                   </li>
 
-                  {/* About */}
                   <li>
                     <Link
-                      to="/about"
-                      className={`${styles.header_nav_link} ${
-                        location.pathname === "/about" ? styles.active : ""
-                      }`}
-                    >
-                      About
-                    </Link>
-                  </li>
-
-                  {/* Process */}
-                  <li>
-                    <Link
-                      to="/process"
+                      to="/products"
                       className={`${styles.header_nav_link} ${
                         location.pathname === "/process" ? styles.active : ""
                       }`}
                     >
-                      Process
+                      Products
                     </Link>
                   </li>
 
-                  {/* Projects */}
                   <li>
                     <Link
-                      to="/projects"
+                      to="/products"
+                      className={`${styles.header_nav_link} ${
+                        location.pathname === "/process" ? styles.active : ""
+                      }`}
+                    >
+                      Industries
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      to="/solutions"
                       className={`${styles.header_nav_link} ${
                         location.pathname === "/projects" ? styles.active : ""
                       }`}
                     >
-                      Projects
+                      Solutions
                     </Link>
                   </li>
 
-                  {/* News */}
                   <li>
                     <Link
-                      to="/news"
+                      to="/recourses"
                       className={`${styles.header_nav_link} ${
-                        location.pathname === "/news" ? styles.active : ""
+                        location.pathname === "/projects" ? styles.active : ""
                       }`}
                     >
-                      News
+                      Resource Centers
                     </Link>
                   </li>
 
-                  {/* Contact */}
-                  <li>
-                    <Link
-                      to="/contact"
-                      className={`${styles.header_nav_link} ${
-                        location.pathname === "/contact" ? styles.active : ""
-                      }`}
-                    >
-                      Contact
-                    </Link>
+                  <li
+                    className={`${styles.dropdown} ${
+                      dropdown_open ? styles.open : ""
+                    }`}
+                    onClick={toggleDropdown}
+                  >
+                    <div className={styles.header_dropdown_nav}>
+                      <Link
+                        to="/company"
+                        className={`${styles.header_nav_link} ${
+                          location.pathname === "/services" ? styles.active : ""
+                        }`}
+                      >
+                        Company
+                      </Link>
+                      <FontAwesomeIcon icon={faChevronDown} />
+                    </div>
+                    <ul className={styles.header_dropdown_menu}>
+                      <li>
+                        <Link
+                          to="/about"
+                          className={styles.header_dropdown_item}
+                        >
+                          About Us
+                        </Link>
+                      </li>
+                      <li>
+                        <a href="/contact" className={styles.header_dropdown_item}>
+                          Contact Us
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </nav>

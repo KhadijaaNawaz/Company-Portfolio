@@ -6,7 +6,7 @@ const Experience = ({ markText, description }) => {
   return (
     <div className={styles.experience_flex}>
     <p className={styles.experience_block}>
-      <mark className={styles.experience_mark}>30+</mark>
+      <mark className={styles.experience_mark}>5+</mark>
     </p>
     <span className={styles.experience_text}>
       Years of Experience
