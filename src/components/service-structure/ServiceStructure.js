@@ -4,6 +4,8 @@ import styles from "./servicestructure.module.css";
 import Accordion from "../../components/accordion/Accordion";
 import CallUs from "../../components/call-us/CallUs.js";
 import Mail from "../../components/mail/Mail.js";
+import accordionData from '../../data/accordionData';  
+
 
 const ServiceStructure = ({
   ServiceListComponent,
@@ -32,7 +34,8 @@ const ServiceStructure = ({
           <div className={styles.structure_accordian}>
             <h2>Why Choose Us?</h2>
             <div className={styles.structure_accordian_width}>
-            <Accordion  /></div>
+            <Accordion data={accordionData} />
+            </div>
           </div>
         </div>
       </div>

@@ -6,6 +6,8 @@ import SectionTitle from "../../components/section-title/SectionTitle";
 import Accordion from "../../components/accordion/Accordion.js";
 import TeamSection from "../../components/team/Team.js";
 import ExploreFurtherSection from "../../components/explore/Explore.js";
+import accordionData from '../../data/accordionData';  
+import aboutData from '../../data/aboutData'; 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -75,7 +77,7 @@ const About = () => {
             </button>
           </div>
           <div className={homestyles.right}>
-           <Accordion />
+          <Accordion data={aboutData } />
           </div>
         </div>
       </section>
@@ -98,7 +100,7 @@ const About = () => {
             </button>
           </div>
           <div className={homestyles.right}>
-            <Accordion />
+          <Accordion data={accordionData} />
           </div>
         </div>
       </section>
