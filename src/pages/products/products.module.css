@@ -1,0 +1,43 @@
+.showcaseSection {
+    padding: 60px 20px; 
+    text-align: center;
+  }
+  
+  .showcaseContainer {
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+  
+  .showcaseTitle {
+    font-size: var(--font-large);
+    line-height: 1.2;
+
+    font-weight: 700;
+    color: #000000; 
+    margin-bottom: 20px;
+  }
+  
+  .showcaseDescription {
+    font-size: var(--font-small);
+    line-height: 1.8;
+    color: #666666; 
+    margin-bottom: 40px; 
+  }
+  
+  .showcaseIconWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+  
+  .showcaseIcon {
+    width: 40px; 
+    height: 40px;
+  }
+  
+  .showcaseIconText {
+    font-size: var(--font-small);
+    color: #000000;
+  }
+  

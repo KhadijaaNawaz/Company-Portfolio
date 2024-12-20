@@ -11,10 +11,15 @@ import styles from "./header.module.css";
 
 const Header = () => {
   const [dropdown_open, setDropdown_open] = useState(false);
+  const [products_dropdown_open, setProducts_dropdown_open] = useState(false); // State for Products dropdown
   const [menu_open, setMenu_open] = useState(false);
 
   const toggleDropdown = () => {
     setDropdown_open(!dropdown_open);
+  };
+
+  const toggleProductsDropdown = () => {
+    setProducts_dropdown_open(!products_dropdown_open);
   };
 
   const toggleMenu = () => {
@@ -89,24 +94,56 @@ const Header = () => {
                         </Link>
                       </li>
                       <li>
-                        <a href="/Accounting" className={styles.header_dropdown_item}>
+                        <Link to="/accounting" className={styles.header_dropdown_item}>
                           Accounting
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/Tax_Panning"  className={styles.header_dropdown_item}>
+                        <Link to="/tax-planning" className={styles.header_dropdown_item}>
                           Tax Planning
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/Accounting"  className={styles.header_dropdown_item}>
+                        <Link to="/business-advisory" className={styles.header_dropdown_item}>
                           Business Advisory
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/Accounting"  className={styles.header_dropdown_item}>
+                        <Link to="/payroll" className={styles.header_dropdown_item}>
                           Payroll Management
-                        </a>
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  {/* Products */}
+                  <li
+                    className={`${styles.dropdown} ${
+                      products_dropdown_open ? styles.open : ""
+                    }`}
+                    onClick={toggleProductsDropdown}
+                  >
+                    <div className={styles.header_dropdown_nav}>
+                      <Link
+                        to="/products"
+                        className={`${styles.header_nav_link} ${
+                          location.pathname === "/products" ? styles.active : ""
+                        }`}
+                      >
+                        Products
+                      </Link>
+                      <FontAwesomeIcon icon={faChevronDown} />
+                    </div>
+                    <ul className={styles.header_dropdown_menu}>
+                      <li>
+                        <Link to="/products/erp" className={styles.header_dropdown_item}>
+                          ERP
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/products/crm" className={styles.header_dropdown_item}>
+                          CRM
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -123,7 +160,7 @@ const Header = () => {
                     </Link>
                   </li>
 
-                  {/* Process */}
+                  {/* Process
                   <li>
                     <Link
                       to="/process"
@@ -133,7 +170,7 @@ const Header = () => {
                     >
                       Process
                     </Link>
-                  </li>
+                  </li> */}
 
                   {/* Projects */}
                   <li>

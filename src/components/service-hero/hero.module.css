@@ -92,16 +92,16 @@
    /* Responsive Design */
    @media screen and (max-width: 1024px) {
     .servicesContainer {
-      padding: 40px 20px; /* Reduce padding for medium screens */
+      padding: 40px 20px; 
       gap: 30px;
     }
   
     .servicesText {
-      max-width: 60%; /* Adjust text width */
+      max-width: 60%; 
     }
   
     .servicesImage {
-      max-width: 40%; /* Adjust image width */
+      max-width: 40%;
     }
   }
   
@@ -109,7 +109,7 @@
     .servicesContainer {
       flex-direction: column;
       text-align: center;
-      padding: 30px 15px; /* Smaller padding */
+      padding: 30px 15px; 
       gap: 20px;
     }
   
@@ -119,22 +119,22 @@
     }
   
     .servicesText {
-      gap: 10px; /* Reduce gap */
+      gap: 10px; 
     }
   }
   
   @media screen and (max-width: 480px) {
     .servicesBtn {
       font-size: 12px;
-      padding: 6px 12px; /* Smaller button */
+      padding: 6px 12px; 
     }
   
     .servicesTitle {
-      font-size: 24px; /* Adjust heading size */
+      font-size: 24px; 
     }
   
     .servicesBreadcrumb {
-      font-size: 12px; /* Smaller breadcrumb text */
+      font-size: 12px; 
     }
   
     .servicesContainer {

@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--primary); 
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+  .navList {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    font-size: var(--font-small);
+    font-weight: 400;
+    color: white; 
+    cursor: pointer;
+    white-space: nowrap; 
+    transition: color 0.3s ease;
+  }
+  
+  .navItem:hover {
+    color: var(--light-green); 
+  }
+  
+  @media (max-width: 768px) {
+    .navList {
+      justify-content: center; 
+      gap: 10px; 
+    }
+  
+   
+  }
+  
