@@ -134,12 +134,12 @@ const Header = () => {
                     </div>
                     <ul className={styles.header_dropdown_menu}>
                       <li>
-                        <Link to="/products/erp" className={styles.header_dropdown_item}>
+                        <Link to="/erp" className={styles.header_dropdown_item}>
                           ERP
                         </Link>
                       </li>
                       <li>
-                        <Link to="/products/crm" className={styles.header_dropdown_item}>
+                        <Link to="/crm" className={styles.header_dropdown_item}>
                           CRM
                         </Link>
                       </li>
