@@ -95,7 +95,7 @@
 }
 
 .footer_links_list li a:hover {
-  color: var(--light-green);
+  color: var(--dark-green);
 }
 
 .footer_bottom {
@@ -145,10 +145,11 @@
   color: #555;
   text-decoration: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
 }
 
 .footer_social_links li a:hover {
-  background: #000;
+  background: var(--dark-green);
   color: #fff;
 }
 
@@ -180,7 +181,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary);
+  background-color: var(--dark-green);
   color: #fff;
   border-radius: 50%;
   width: 50px;
@@ -194,13 +195,13 @@
 }
 .jobaway
 {
-  color: var(--light-green);
+  color: var(--dark-green);
 }
 
 .footer_item .footer_info .footer_label {
   font-size: 14px;
   font-weight: bold;
-  color: var(--secondary);
+  color: var(--dark-green);
   text-transform: uppercase;
 }
 
@@ -213,7 +214,7 @@
 
 .footer_item .footer_info .footer_value:hover {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--dark-green);
 }
 
 @media only screen and (max-width: 991px) {

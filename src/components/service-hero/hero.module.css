@@ -30,8 +30,8 @@
   }
   
   .servicesBtn {
-    background-color: var(--light-green);
-    color: var(--light);
+    background-color: var(--hover-color);
+    color: var(--dark);
     border: none;
     padding: 8px 15px;
     border-radius: 15px;
