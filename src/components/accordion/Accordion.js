@@ -3,7 +3,7 @@ import styles from './accordion.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleDown } from '@fortawesome/free-solid-svg-icons';
 
-const Accordion = ({ data }) => { // Accept `data` as a prop
+const Accordion = ({ data }) => { 
   const [openIndex, setOpenIndex] = useState(0);
 
   const toggleAccordion = (index) => {
