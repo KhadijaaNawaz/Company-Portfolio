@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const ServicesList = () => {
-  const location = useLocation(); // Get the current path
+  const location = useLocation(); 
 
   const services = [
     { title: "Accounting", link: "/Accounting" },
