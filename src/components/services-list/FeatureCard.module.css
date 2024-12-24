@@ -15,7 +15,7 @@
 
 .feature_wrapper p {
   font-size: var(--font-small);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   color: var(--light);
 }
 
@@ -45,8 +45,8 @@
 }
 
 .featureSidebar li {
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 5px;
+  margin-bottom: 35px;
   cursor: pointer;
   border-bottom: 0.5px solid rgba(182, 179, 179, 0.1);
   transition: background-color 0.3s, color 0.3s;
@@ -54,8 +54,8 @@
 }
 
 .featureSidebar li:hover {
-  background-color: var(--light);
-  color: var(--dark);
+  color: var(--hover-color);
+
 }
 
 .featureSidebar li.active {

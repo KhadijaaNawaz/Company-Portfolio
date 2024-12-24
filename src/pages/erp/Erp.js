@@ -3,7 +3,8 @@ import Hero from "../../components/service-hero/ServiceHero";
 import Grid from "../../components/reverse-grid/ReverseGrid";
 import ExploreFurtherSection from "../../components/explore/Explore";
 import FeatureCard from "../../components/services-list/SectionList";
-
+import Quote from "../../components/testimonial-section/TestimonialSection";
+import ChallengesSection from "../../components/challenges-section/ChallengesSection";
 import featureDetailsData from "../../data/erpFeatureDetails.json";
 
 const Erp = () => {
@@ -22,6 +23,33 @@ const Erp = () => {
     "Supply Chain Management",
     "Warehouse Management",
     "Procurement",
+  ];
+
+  const challenges = [
+    {
+      title: "Manual Processes: ",
+      description: "Automate and streamline manual processes that waste time and resources.",
+    },
+    {
+      title: "Data Accessibility: ",
+      description: "Quickly and easily access real-time data across the organization.",
+    },
+    {
+      title: "Data Integrity:",
+      description: "Provide stakeholders with timely, accurate financial statements, inventory reports and more.",
+    },
+    {
+      title: "Meeting Expectations:",
+      description: "Deliver promised order accuracy, on-time delivery and cost savings.",
+    },
+    {
+      title: "Balancing Supply and Demand:",
+      description: "Manage supply chains in the face of rapid change, rising costs and shifting buyer behavior.",
+    },
+    {
+      title: "Inventory Insights:",
+      description: "Plan and balance inventory to meet demand.",
+    },
   ];
 
   const [featureDetails] = useState(featureDetailsData);
@@ -54,7 +82,13 @@ const Erp = () => {
         selectedItem={selectedFeature}
         onFeatureClick={handleFeatureClick}
       />
-
+       <ChallengesSection
+        title="Challenges NetSuite ERP Solves"
+        image="assets/erp/thmb-l2-challenges.avif"
+        challenges={challenges}
+      />
+      <Quote />
+     
       <div id="exploreSection">
         <ExploreFurtherSection />
       </div>

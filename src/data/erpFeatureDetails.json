@@ -1,47 +1,57 @@
 {
-  "Accounting Software": {
-    "title": "Accounting Software",
-    "description": "Transform your general ledger, optimize AR, automate AP and streamline tax management. Get a complete view of cash flow and financial performance.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
-  },
-  "Financial Management": {
-    "title": "Financial Management",
-    "description": "Manage financial processes with greater accuracy and efficiency. Achieve better insights and control over financial operations.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
-  },
-  "Global Business Management": {
-    "title": "Global Business Management",
-    "description": "Manage multi-currency, multi-country, and global operations seamlessly.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
-  },
-  "Enterprise Performance Management": {
-    "title": "Enterprise Performance Management",
-    "description": "Gain insights into business performance to drive strategic decisions with advanced analytics and planning tools.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
-  },
-  "Inventory Management": {
-    "title": "Inventory Management",
-    "description": "Optimize stock levels and improve order fulfillment with real-time inventory tracking.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
-  },
-  "Order Management": {
-    "title": "Order Management",
-    "description": "Streamline the order-to-cash process for improved efficiency and customer satisfaction.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
-  },
-  "Supply Chain Management": {
-    "title": "Supply Chain Management",
-    "description": "Enhance visibility and collaboration across the supply chain for better operational efficiency.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
-  },
-  "Warehouse Management": {
-    "title": "Warehouse Management",
-    "description": "Improve warehouse operations with tools to manage inventory, orders, and shipping in real time.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
-  },
-  "Procurement": {
-    "title": "Procurement",
-    "description": "Simplify purchasing processes, ensure compliance, and reduce costs with an integrated procurement system.",
-    "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+    "Accounting Software": {
+      "title": "Accounting Software",
+      "description": "Transform your general ledger, optimize AR, automate AP and streamline tax management. Get a complete view of cash flow and financial performance.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    },
+    "Financial Management": {
+      "title": "Financial Management",
+      "description": "Manage financial processes with greater accuracy and efficiency. Achieve better insights and control over financial operations.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    },
+    "Global Business Management": {
+      "title": "Global Business Management",
+      "description": "Manage multi-currency, multi-country, and global operations seamlessly.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    },
+    "Enterprise Performance Management": {
+      "title": "Enterprise Performance Management",
+      "description": "Gain insights into business performance to drive strategic decisions with advanced analytics and planning tools.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    },
+    "Inventory Management": {
+      "title": "Inventory Management",
+      "description": "Optimize stock levels and improve order fulfillment with real-time inventory tracking.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    },
+    "Order Management": {
+      "title": "Order Management",
+      "description": "Streamline the order-to-cash process for improved efficiency and customer satisfaction.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    },
+    "Supply Chain Management": {
+      "title": "Supply Chain Management",
+      "description": "Enhance visibility and collaboration across the supply chain for better operational efficiency.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    },
+    "Warehouse Management": {
+      "title": "Warehouse Management",
+      "description": "Improve warehouse operations with tools to manage inventory, orders, and shipping in real time.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    },
+    "Procurement": {
+      "title": "Procurement",
+      "description": "Simplify purchasing processes, ensure compliance, and reduce costs with an integrated procurement system.",
+            "image": "assets/erp/thmb-550-erp-suiteanalytics.png"
+
+    }
   }
-}
+  

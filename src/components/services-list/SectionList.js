@@ -43,7 +43,7 @@ const FeatureCard = ({
           <button className={button.contact_btn}>Learn More</button>
           <img
             src={image}
-            alt={`${title} visual`}
+            alt={`${title} visual`} // Corrected syntax for alt
             onClick={toggleModal} 
             className={styles.clickableImage} 
           />
@@ -54,7 +54,7 @@ const FeatureCard = ({
       {isModalOpen && (
         <div className={styles.modalOverlay} onClick={toggleModal}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-            <img src={image} alt={`${title} visual in modal`} />
+            <img src={image} alt={`${title} visual in modal`} /> {/* Corrected syntax for alt */}
             <button className={styles.closeButton} onClick={toggleModal}>
               ✖
             </button>
