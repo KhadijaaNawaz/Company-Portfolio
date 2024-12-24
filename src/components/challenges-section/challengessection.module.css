@@ -4,7 +4,7 @@
   padding: 30px;
   position: relative;
   margin-top: 5%;
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 8%;
 
@@ -22,6 +22,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  width: 85%;
+margin: auto;
   align-items: flex-start;
   position: relative;
 }
@@ -35,7 +37,7 @@
   padding: 10px;
   position: relative;
   z-index: 2; 
-  margin-right: -100px;
+  margin-right: -150px;
 }
 
 .challenges_imageContainer:before {
@@ -62,7 +64,9 @@
   margin-bottom: 15px;
   font-size: var(--font-small);
   width: 80%;
-  margin: auto;
+  margin: 10px;
+  margin-left:100px ;
+  align-items: end;
   line-height: 2;
 }
 
