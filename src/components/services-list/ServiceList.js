@@ -10,7 +10,7 @@ const ServicesList = () => {
 
   const services = [
     { title: "Accounting", link: "/accounting" },
-    { title: "Tax Planning", link: "/tax_planning" },
+    { title: "Tax Planning", link: "/tax-planning" },
     { title: "Business Advisory", link: "/services/business-advisory" },
     { title: "Payroll Management", link: "/services/payroll-management" },
     { title: "Global Accounting", link: "/services/global-accounting" },

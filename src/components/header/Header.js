@@ -48,7 +48,7 @@ const Header = () => {
             <div className={`${styles.header_col_nav} ${menu_open ? styles.open : ""}`}>
               <nav className={styles.header_nav}>
                 <ul className={styles.header_nav_list}>
-                  {/* Home */}
+                  {}
                   <li>
                     <Link
                       to="/"
@@ -58,7 +58,7 @@ const Header = () => {
                     </Link>
                   </li>
 
-                  {/* Services Dropdown */}
+                  {}
                   <li className={styles.dropdown} onClick={toggleDropdown}>
                     <div className={styles.header_dropdown_nav}>
                       <Link
@@ -113,7 +113,7 @@ const Header = () => {
                     </ul>
                   </li>
 
-                  {/* Products Dropdown */}
+                  {}
                   <li className={styles.dropdown} onClick={toggleProductsDropdown}>
                     <div className={styles.header_dropdown_nav}>
                       <Link
@@ -144,7 +144,7 @@ const Header = () => {
                     </ul>
                   </li>
 
-                  {/* Other Links */}
+                  {}
                   <li>
                     <Link
                       to="/industries"
@@ -172,12 +172,12 @@ const Header = () => {
                     </Link>
                   </li>
 
-                  {/* Company Dropdown */}
+                  {}
                   <li className={styles.dropdown} onClick={toggleDropdown}>
                     <div className={styles.header_dropdown_nav}>
                       <Link
-                        to="/company"
-                        className={`${styles.header_nav_link} ${isActive("/company")}`}
+                        to="/about"
+                        className={`${styles.header_nav_link} ${isActive("/about")}`}
                       >
                         Company
                       </Link>

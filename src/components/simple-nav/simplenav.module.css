@@ -24,7 +24,7 @@ html {
   .simple_navItem a {
     font-size: var(--font-small);
     font-weight: 400;
-    color: var(--font-small);
+    color: var(--light);
     cursor: pointer;
     white-space: nowrap;
     transition: color 0.3s ease;

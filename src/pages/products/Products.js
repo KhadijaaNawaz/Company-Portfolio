@@ -6,6 +6,7 @@ import ErpData from "../../data/erpProducts";
 import homestyles from "../home/home.module.css";
 import styles from "./products.module.css";
 import CrmData from "../../data/crmProducts";
+import HeroBottom from "../../components/hero-bottom/HeroBottom";
 import ExploreFurtherSection from "../../components/explore/Explore.js";
 
 const Products = () => {
@@ -40,23 +41,8 @@ const Products = () => {
       </div>
 
       <div id="serviceSection">
-        <section className={homestyles.section_wrapper}>
-          <div className={homestyles.container}>
-            {data.map((item, index) => (
-              <div key={index} className={homestyles.column}>
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className={homestyles.icon}
-                />
-                <div className={homestyles.text_content}>
-                  <h3 className={homestyles.title}>{item.title}</h3>
-                  <p className={homestyles.description}>{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+      <HeroBottom />
+
       </div>
 
       {/* Accounting Section */}
