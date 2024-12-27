@@ -25,7 +25,7 @@
   position: relative;
   margin: auto;
   margin-top: 40px;
-  color: #333;
+  color: var(--dark);
 }
 
 .footer .footer_widget {
@@ -58,8 +58,8 @@
   width: 182px;
   background: #000;
   padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
+  font-size: var(--font-small);
+  color: var(--light);
   border-radius: 10px;
   text-decoration: none;
 }
@@ -73,9 +73,9 @@
 }
 
 .footer_links_widget .footer_widget_title h4 {
-  font-size: 20px;
+  font-size: var(--font-card-header);
   margin-bottom: 20px;
-  color: #333;
+  color: var(--dark);
 }
 
 .footer_links_list {
@@ -89,8 +89,8 @@
 }
 
 .footer_links_list li a {
-  font-size: 16px;
-  color: #555;
+  font-size: var(--font-small);
+  color: var(--grey);
   text-decoration: none;
 }
 
@@ -110,13 +110,13 @@
 }
 
 .footer_bottom .footer_copyright {
-  font-size: 14px;
-  color: #777;
+  font-size: var(--font-small);
+  color: var(--grey);
 }
 
 .footer_bottom .footer_copyright a {
   text-decoration: none;
-  color: #333;
+  color: var(--grey);
 }
 
 .footer_bottom .footer_copyright a:hover {
@@ -139,10 +139,10 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: #fff;
+  color: var(--light);;
   border-radius: 50%;
   font-size: 18px;
-  color: #555;
+  color: var(--grey);;
   text-decoration: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-in-out;
@@ -150,7 +150,7 @@
 
 .footer_social_links li a:hover {
   background: var(--dark-green);
-  color: #fff;
+  color: var(--light);
 }
 
 .footer_header .footer_header_container {
@@ -160,7 +160,7 @@
   width: 90%;
   margin: 0 auto;
   padding-bottom: 40px;
-  border-bottom: 0.7px solid rgb(216, 207, 207);
+  border-bottom: 0.7px solid var(--light);;
   flex-wrap: wrap;
 }
 
@@ -182,11 +182,11 @@
   align-items: center;
   justify-content: center;
   background-color: var(--dark-green);
-  color: #fff;
+  color: var(--light);
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  font-size: 24px;
+  font-size: var(--font-medium);
 }
 
 .footer_item .footer_info {
@@ -199,16 +199,16 @@
 }
 
 .footer_item .footer_info .footer_label {
-  font-size: 14px;
+  font-size: var(--font-small);
   font-weight: bold;
   color: var(--dark-green);
   text-transform: uppercase;
 }
 
 .footer_item .footer_info .footer_value {
-  font-size: 18px;
+  font-size: var(--font-small);
   font-weight: bold;
-  color: #000;
+  color:var(--dark);
   text-decoration: none;
 }
 
@@ -258,11 +258,11 @@
   }
 
   .footer_item .footer_info .footer_label {
-    font-size: 12px;
+    font-size: var(--font-small);
   }
 
   .footer_item .footer_info .footer_value {
-    font-size: 16px;
+    font-size: var(--font-small);
   }
 }
 

@@ -1,103 +1,104 @@
 .what_wrapper {
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    box-sizing: border-box;
-  }
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.what_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.what_content {
+  flex: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.what_description {
+  font-size: var(--font-small); 
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--gray); 
+}
+
+.what_title {
+  font-size: var(--font-medium); 
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: var(--dark); 
+}
+
+.what_subDescription {
+  font-size: var(--font-small); 
+  color: var(--gray-light); 
+  margin-bottom: 20px;
+}
+
+.what_serviceList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.what_serviceItem {
+  font-size: var(--font-small); 
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.what_serviceIcon {
+  margin-right: 10px;
+  color: var(--dark-green); 
+  font-size: 18px;
+}
+
+.what_visual {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.what_image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
   .what_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .what_content {
-    flex: 1;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .what_description {
-    font-size: var(--font-small);
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: grey;
-  }
-
-  .what_title {
-    font-size: var(--font-medium);
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
-
-  .what_subDescription {
-    font-size: var(--font-small);
-    color: #666;
-    margin-bottom: 20px;
-  }
-
-  .what_serviceList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .what_serviceItem {
-    font-size: var(--font-small);
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-  }
-
-  .what_serviceIcon {
-    margin-right: 10px;
-    color: var(--dark-green);
-    font-size: 18px;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   .what_visual {
-    flex: 0.8;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .what_image {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    object-fit: cover;
-  }
-
-  @media (max-width: 768px) {
-    .what_container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .what_visual {
       width: 100%;
       margin-bottom: 20px;
-    }
+  }
 
-    .what_content {
+  .what_content {
       flex: 1 1 100%;
       margin-bottom: 20px;
-    }
   }
+}
 
-  @media (max-width: 480px) {
-    .what_wrapper {
+@media (max-width: 480px) {
+  .what_wrapper {
       padding: 10px;
-    }
   }
+}
