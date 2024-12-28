@@ -2,7 +2,7 @@
     position: relative; 
     margin-top: 60px;
     border-radius: 8px;
-    background: #f9f9f9;
+    background: var(--light);
   }
   
   .map_container::before {
@@ -12,13 +12,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2); 
+    background: var(--dark); 
     border-radius: 8px;
     z-index: 1; 
   }
   
   .mapTitle {
-    font-size: 1.5rem;
+    font-size: var(--forn-medium);
     margin-bottom: 10px;
     z-index: 2; 
   }

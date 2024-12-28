@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './image.module.css'; // Import the CSS module
+import styles from './image.module.css'; 
 
-// Reusable ImageWithBackground Component
 const Image = ({ backgroundSvg, foregroundImage, style }) => {
   return (
     <div className={styles.imageWithBackground} style={style}>

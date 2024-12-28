@@ -1,79 +1,83 @@
-/* Container for the entire grid */
-.grid_container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 80%;
-  margin: 40px auto;
-  padding: 0 20px;
+.reverse_wrapper {
+  width: 90%;
+  margin: auto;
+  color: var(--dark-rgba-font);
+  margin-top: 2%;
+  padding: 2%;
+  margin-bottom: 10%;
 }
 
-/* Section within the grid */
+
+.reverse_wrapper p {
+  font-size: var(--font-large);
+  font-weight: 200;
+  margin-bottom:3rem;
+  line-height: 1;
+}
+
 .grid_section {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 30px;
-  padding: 20px;
-  background-color: #f8f8f8;
+  padding: 40px;
+  margin:auto;
+  width: 90%;
+  background-color: var(--dark-inverse);
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
 }
 
-.grid_section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.normal_layout {
+  flex-direction: row;
 }
 
-/* Style for odd sections, which are reversed in order */
-.grid_section.grid_odd {
+.reverse_layout {
   flex-direction: row-reverse;
 }
 
-/* Image container */
 .grid_image {
-  flex: 1;
+  flex: 2.5;
   max-width: 50%;
+}
+.reverse_layout .grid_image img
+{
+  margin-left: -90px;
+
+}
+.normal_layout .grid_image img
+{
+  margin-right: -20px;
+
 }
 
 .grid_image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  object-fit: cover;
 }
 
-/* Text section */
 .grid_text {
-  flex: 2;
-  color: #333;
+  flex: 1.5;
+  text-align: left;
 }
 
-.grid_text h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 10px;
+.grid_text h1 {
+  font-size: var(--font-medium);
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 1;
 }
 
 .grid_text p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-top: 10px;
+  font-size: var(--font-small);
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .grid_container {
-    width: 90%;
-    margin-top: 20px;
-  }
-
   .grid_section {
     flex-direction: column;
-    gap: 20px;
+    text-align: center;
+    padding: 20px;
   }
 
   .grid_image {
@@ -81,14 +85,7 @@
   }
 
   .grid_text {
-    text-align: center;
+    margin-top: 15px;
   }
 
-  .grid_text h2 {
-    font-size: 1.5rem;
-  }
-
-  .grid_text p {
-    font-size: 0.9rem;
-  }
 }

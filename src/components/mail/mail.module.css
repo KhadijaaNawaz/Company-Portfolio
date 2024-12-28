@@ -10,11 +10,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--secondary);
-    color: #fff;
+    color: var(--light);
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    font-size: 24px;
+    font-size: var(--font-medium);
   }
   
   .footer_item .footer_info {
@@ -22,16 +22,16 @@
     flex-direction: column;
   }
   .footer_item .footer_info .footer_label {
-    font-size: 17px;
+    font-size: var(--font-small);
     font-weight: bold;
     color: var(--secondary);
     text-transform: uppercase;
   }
   
   .footer_item .footer_info .footer_value {
-    font-size: 19px;
+    font-size: var(--font-card-header);
     font-weight: bold;
-    color: #000;
+    color: var(--dark);
     text-decoration: none;
   }
   

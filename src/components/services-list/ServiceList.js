@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const ServicesList = () => {
-  const location = useLocation(); // Get the current path
+  const location = useLocation(); 
 
   const services = [
-    { title: "Accounting", link: "/Accounting" },
-    { title: "Tax Planning", link: "/Tax_Panning" },
+    { title: "Accounting", link: "/accounting" },
+    { title: "Tax Planning", link: "/tax-planning" },
     { title: "Business Advisory", link: "/services/business-advisory" },
     { title: "Payroll Management", link: "/services/payroll-management" },
     { title: "Global Accounting", link: "/services/global-accounting" },

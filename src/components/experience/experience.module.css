@@ -41,7 +41,7 @@
     font-size: var(--font-medium);
     font-style: italic;
      font-family: 'YourTertiaryFont', serif;
-    color: #000;
+    color: var(--dark);
     padding-left: 0.5rem;
   }
   

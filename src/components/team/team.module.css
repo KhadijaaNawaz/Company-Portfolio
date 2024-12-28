@@ -3,7 +3,7 @@
   position: relative;
   width: 90%;
   margin: 0 auto;
-  background-color: #F7F0E7;
+  background-color: var(--light-pink);
   padding: 80px 20px;
   text-align: center;
   border-radius: 10px;
@@ -69,7 +69,7 @@
 .slider_bottom {
   bottom: 0;
   width: 80%;
-  color: #f8f9fa;
+  color: var(--light);
   display: flex;
   justify-content: center;
   font-size: var(--font-small);
@@ -77,8 +77,8 @@
   text-align: center;
   margin: 40px 16px;
   gap: 10px;
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: var(--font-family);
+  color: var(--dark);
 }
 
 /* Media Query for 788px */
@@ -108,8 +108,6 @@
   .nav_circle {
     margin: 0 5px;
   }
-
-  
 }
 
 /* Media Query for 480px */
@@ -128,12 +126,11 @@
   }
 }
 
-
 .highlighted_heading {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
   font-size: var(--font-large);
   font-weight: bolder;
-  color: #000;
+  color: var(--dark);
   text-align: center;
   width: 60%;
   line-height: 1.4;
@@ -149,26 +146,25 @@
 }
 
 .hiring_button {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--light);
+  color: var(--dark);
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
+  font-size: var(--font-small);
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .professional_text {
   margin: 0;
-  color: var(--);
-  font-size: 16px;
+  color: var(--text-color);
+  font-size: var(--font-medium);
 }
 
-
 .apply_link {
-  color:var(--dark-green);
+  color: var(--dark-green);
   text-decoration: underline;
   font-weight: bold;
   transition: 0.3s ease-in-out;
@@ -176,4 +172,4 @@
 
 .apply_link:hover {
   color: var(--primary);
-}
+} 

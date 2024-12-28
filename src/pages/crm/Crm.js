@@ -10,7 +10,7 @@ import featureDetailsData from "../../data/erpFeatureDetails.json";
 const Erp = () => {
   const breadcrumbs = [
     { text: "HOME", isActive: false },
-    { text: "ERP", isActive: true },
+    { text: "CRM", isActive: true },
   ];
 
   const features = [

@@ -1,33 +1,29 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+// import "swiper/css";
+// import "swiper/css/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight, faClock } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-
-import styles from "./services.module.css";
-import services from "./services.json";
+import Card from "../card/Card";
 import SectionTitle from "../section-title/SectionTitle";
+import services from "./services.json";
+import styles from "./services.module.css";
 
 const Services = () => {
   // Function to truncate text after 50 words
-  const truncateText = (text, limit) => {
-    if (text.length > limit) {
-      return text.substring(0, limit) + "...";
-    }
-    return text;
-  };
+  const truncateText = (text, limit) => 
+    text.length > limit ? `${text.substring(0, limit)}...` : text;
 
   return (
     <div className={styles.services_wrapper}>
       <div className={styles.services_content}>
+        {/* Section Title */}
         <SectionTitle
-          theme={"dark"}
-          btn_text={"Our Services"}
-          title={"We Can Help You With"}
-          desc={"Explore our range of professional services tailored to your needs."}
+          theme="dark"
+          btn_text="Our Services"
+          title="We Can Help You With"
+          desc="Explore our range of professional services tailored to your needs."
         />
 
         <Swiper
@@ -39,47 +35,42 @@ const Services = () => {
           }}
           modules={[Navigation]}
           breakpoints={{
-            1200: {
-              slidesPerView: 4,
-            },
-            1050: {
-              slidesPerView: 3,
-            },
-            788: {
-              slidesPerView: 2,
-            },
-            
-            0: {
-              slidesPerView: 1,
-            },
+            1200: { slidesPerView: 4 },
+            1050: { slidesPerView: 3 },
+            788: { slidesPerView: 2 },
+            0: { slidesPerView: 1 },
           }}
         >
           {services.map((service) => (
             <SwiperSlide key={service.id}>
-              <div className={styles.card}>
-                {/* <img src='/assets/Services/service-1.jpg' /> */}
-                <h3>{service.title}</h3>
-                <p>{truncateText(service.description, 250)}</p>
-                {/* Learn More Button */}
-                <Link className={styles.learn_more_button} to={"/services"}>
-                  View details
-                </Link>
-              </div>
+             <Card
+                eventData={{
+                  title: service.title,
+                  description: truncateText(service.description, 50),
+                  imageUrl: service.imageUrl,
+                }}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
 
+        {/* Navigation Buttons */}
         <div className={styles.slider_navigation}>
-          <div className={`next_button ${styles.nav_circle}`}>
+          <div className={`prev_button ${styles.nav_circle}`}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
-          <div className={`prev_button ${styles.nav_circle}`}>
+          <div className={`next_button ${styles.nav_circle}`}>
             <FontAwesomeIcon icon={faChevronRight} />
           </div>
         </div>
+
+        {/* Bottom Text */}
         <div className={styles.slider_bottom}>
           <p>
-            <FontAwesomeIcon icon={faClock} style={{ marginRight: '10px', fontSize: '20px' }} />
+            <FontAwesomeIcon
+              icon={faClock}
+              style={{ marginRight: "10px", fontSize: "20px" }}
+            />
             24/7 Support – Always Here to Assist with Your IT and Software Needs, Anytime, Anywhere.
           </p>
         </div>

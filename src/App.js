@@ -9,6 +9,7 @@ import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Products from './pages/products/Products';
 import Erp from './pages/erp/Erp';
+import Crm from './pages/crm/Crm';
 import './App.css';
 
 const App = () => {
@@ -18,13 +19,14 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/Accounting" element={<Accounting />} />
-          <Route path="/Tax_Panning" element={<Tax />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/accounting" element={<Accounting />} />
+          <Route path="/tax-planning" element={<Tax />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
           <Route path="/erp" element={<Erp />} />
+          <Route path="/crm" element={<Crm />} />
         </Routes>
         <Footer />
       </Router>

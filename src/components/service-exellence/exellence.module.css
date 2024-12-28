@@ -22,7 +22,7 @@
 
   .excellence_title {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: var(--font-large);
     line-height: 1.5;
     word-wrap: break-word;
     max-width: 50%;
@@ -45,7 +45,7 @@
 
   @media (max-width: 768px) {
     .excellence_title {
-      font-size: 1.5rem; 
+      font-size: var(--font-medium); 
     }
 
     .excellence_headingContainer {

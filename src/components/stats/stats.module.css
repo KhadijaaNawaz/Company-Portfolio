@@ -3,7 +3,7 @@
     font-size: var(--font-large-extra);
     color: dark;
     font-weight: bold;
-    color: black;
+    color: var(--dark);
     margin-bottom: 20px;
   }
   
@@ -19,6 +19,6 @@
     line-height: 1.4;
     white-space: pre-wrap; 
     font-weight: light;
-    color: grey;
+    color: var(--dark-rgba-50);
   }
   
