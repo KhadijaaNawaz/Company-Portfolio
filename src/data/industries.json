@@ -1,0 +1,63 @@
+[
+    {
+      "icon": "faBusinessTime",
+      "title": "Agribusiness",
+      "description": "Leverage technology to streamline agriculture and optimize operations.",
+      "link": "/industries/agribusiness"
+    },
+    {
+      "icon": "faBusinessTime",
+      "title": "Banking",
+      "description": "Transform banking services with innovative technology and enhance customer experiences.",
+      "link": "/industries/banking"
+    },
+    {
+      "icon": "faShoppingCart",
+      "title": "Consumer Markets",
+      "description": "Target and engage customers through personalized marketing strategies.",
+      "link": "/industries/consumer-markets"
+    },
+    {
+      "icon": "faTruck",
+      "title": "Dealerships",
+      "description": "Streamline inventory management and improve customer service in the automotive industry.",
+      "link": "/industries/dealerships"
+    },
+    {
+      "icon": "faBusinessTime",
+      "title": "Financial Services",
+      "description": "Enhance financial transactions and operations with cloud-based financial services.",
+      "link": "/industries/financial-services"
+    },
+    {
+      "icon": "faHeartbeat",
+      "title": "Fintech",
+      "description": "Revolutionize financial services with cutting-edge fintech solutions.",
+      "link": "/industries/fintech"
+    },
+    {
+      "icon": "faHeartbeat",
+      "title": "Insurance",
+      "description": "Improve claims processing and customer service with digital solutions.",
+      "link": "/industries/insurance"
+    },
+    {
+      "icon": "faHeartbeat",
+      "title": "Life Sciences",
+      "description": "Drive innovation in pharmaceuticals and life sciences with research-driven solutions.",
+      "link": "/industries/life-sciences"
+    },
+    {
+      "icon": "faBusinessTime",
+      "title": "Metals",
+      "description": "Optimize production and streamline operations in the metals industry.",
+      "link": "/industries/metals"
+    },
+    {
+      "icon": "faBusinessTime",
+      "title": "Private Equity",
+      "description": "Enhance investment strategies and streamline operations in private equity firms.",
+      "link": "/industries/private-equity"
+    }
+  ]
+  

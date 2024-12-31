@@ -7,19 +7,10 @@ import Experience from "../../components/experience/Experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import HeroSection from "../../components/hero/Hero";
-import accordionData from '../../data/accordionData';  
-
-import Bgimage from "../../components/image/Image";
+import accordionData from "../../data/accordionData";
 import HeroBottom from "../../components/hero-bottom/HeroBottom";
 
 const Home = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleAccordion = (index) => {
-    setOpenIndex(index === openIndex ? null : index);
-  };
-
-
   return (
     <div className={homestyles.home_page}>
       <div className="home_wrapper"></div>
@@ -38,17 +29,16 @@ const Home = () => {
                 "At CWIZTECH, we are more than just an IT solutions provider—we are your trusted partner in innovation. Specializing in software development, we deliver technologies that empower businesses to achieve their goals. Our expertise spans across industries, offering robust solutions like ERP to streamline operations and CMIS to revolutionize content management. With a commitment to excellence, we bridge the gap between technology and business, helping organizations of all sizes unlock their full potential. At our core, we value innovation, collaboration, and delivering results that matter."
               }
             />
-             <Experience/>
+            <Experience />
             <button className={`${homestyles.contact_btn}`}>
               Learn More
               <span className={homestyles.arrow}>
                 <FontAwesomeIcon icon={faArrowRight} />
               </span>
             </button>
-            
           </div>
           <div className={homestyles.right}>
-             {/* <Bgimage backgroundSvg={svgIcon} foregroundImage={image} /> */}
+ 
           </div>
         </div>
       </section>
@@ -74,8 +64,7 @@ const Home = () => {
             </button>
           </div>
           <div className={homestyles.right}>
-          <Accordion data={accordionData} />
-
+            <Accordion data={accordionData} />
           </div>
         </div>
       </section>
