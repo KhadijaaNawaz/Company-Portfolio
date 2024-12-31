@@ -58,7 +58,7 @@ const Accounting = () => {
           ProfileCard={<ProfileCard
             name="Michele Miller"
             title="Web Developer"
-            image="assets/Team/team-3.jpg"
+            image="/assets/Team/team-3.jpg"
             socialLinks={[
               { platform: "facebook", url: "https://facebook.com" },
               { platform: "twitter", url: "https://twitter.com" },

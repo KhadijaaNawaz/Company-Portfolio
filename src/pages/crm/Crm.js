@@ -84,7 +84,7 @@ const Erp = () => {
       />
        <ChallengesSection
         title="Challenges NetSuite ERP Solves"
-        image="assets/erp/thmb-l2-challenges.avif"
+        image="/assets/erp/thmb-l2-challenges.avif"
         challenges={challenges}
       />
       <Quote />

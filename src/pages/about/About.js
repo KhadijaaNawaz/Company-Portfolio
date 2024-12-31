@@ -104,7 +104,8 @@ const About = () => {
           </div>
         </div>
       </section>
-      <TeamSection />
+      <TeamSection jsonFileName="team.json"/>
+      
       <ExploreFurtherSection />
       
     </div>
