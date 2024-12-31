@@ -43,9 +43,9 @@ const FeatureCard = ({
           <button className={button.contact_btn}>Learn More</button>
           <img
             src={image}
-            alt={`${title} visual`} // Corrected syntax for alt
+
             onClick={toggleModal} 
-            className={styles.clickableImage} 
+            // className={styles.clickableImage} 
           />
         </div>
       </div>

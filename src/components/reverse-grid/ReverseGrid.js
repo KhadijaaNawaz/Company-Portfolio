@@ -43,4 +43,3 @@ const Grid = ({ jsonFileName }) => {
 };
 
 export default Grid;
-// i want k grid k left or right 2 sections hoon jab id even hoto imafe right section main ho or text wala section left side pr or vice verse

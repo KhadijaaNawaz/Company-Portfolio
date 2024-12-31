@@ -11,6 +11,7 @@ import Products from './pages/products/Products';
 import Erp from './pages/erp/Erp';
 import Crm from './pages/crm/Crm';
 import Industries from './pages/industries/Industries.js';
+import Agribusiness from './pages/industries/agribusiness.js';
 import './App.css';
 
 const App = () => {
@@ -26,9 +27,10 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/erp" element={<Erp />} />
+          <Route path="/products/erp" element={<Erp />} />
           <Route path="/crm" element={<Crm />} />
           <Route path="/industries" element={<Industries />} />
+          <Route path="/industries/agribusiness" element={<Agribusiness />} />
         </Routes>
         <Footer />
       </Router>

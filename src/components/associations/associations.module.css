@@ -1,0 +1,38 @@
+.associations_section {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  
+  .title {
+    font-size: var(--font-large);
+    font-weight: 200;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.5;
+  }
+  
+  
+  .associations_container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    max-width: 750px; 
+    height: auto; 
+  }
+  

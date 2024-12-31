@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import ProfileCard from "../../components/team-member/TeamMember.js";
 import styles from "./team.module.css";
-import team from "./team.json";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-  faClock,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-const Team = () => {
+const Team = ({ jsonFileName }) => {
+  const [teamData, setTeamData] = useState([]);
+
+  useEffect(() => {
+    const loadTeamData = async () => {
+      try {
+        const data = await import(`../../data/${jsonFileName}`);
+        setTeamData(data.default); // 'default' because the imported JSON is treated as a module
+      } catch (error) {
+        console.error("Error loading team data:", error);
+      }
+    };
+
+    loadTeamData();
+  }, [jsonFileName]);
+
   return (
     <div className={styles.team_wrapper}>
       <h2 className={styles.highlighted_heading}>
@@ -32,25 +42,14 @@ const Team = () => {
           }}
           modules={[Navigation]}
           breakpoints={{
-            1200: {
-              slidesPerView: 5,
-            },
-            1050: {
-              slidesPerView: 4,
-            },
-            788: {
-              slidesPerView: 3,
-            },
-
-            488: {
-              slidesPerView: 1,
-            },
-            0: {
-              slidesPerView: 1,
-            },
+            1200: { slidesPerView: 5 },
+            1050: { slidesPerView: 4 },
+            788: { slidesPerView: 3 },
+            488: { slidesPerView: 1 },
+            0: { slidesPerView: 1 },
           }}
         >
-          {team.map((member) => (
+          {teamData.map((member) => (
             <SwiperSlide key={member.id}>
               <ProfileCard
                 key={member.id}
@@ -74,9 +73,8 @@ const Team = () => {
         <div className={styles.slider_bottom}>
           <div className={styles.hiring_button}>WE'RE HIRING</div>
           <p className={styles.professional_text}>
-            Join our team of dedicated professionals -
+            Join our team of dedicated professionals -{" "}
             <a href="#apply" className={styles.apply_link}>
-              {" "}
               Apply Now!
             </a>
           </p>
