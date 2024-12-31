@@ -38,7 +38,7 @@ const Header = () => {
                     alt="Company Logo"
                     width={131}
                     height={27}
-                    src="assets/logo.png"
+                    src="/assets/logo.png"
                     className={styles.header_logo_img}
                   />
                 </a>
@@ -127,8 +127,8 @@ const Header = () => {
                     <ul className={styles.header_dropdown_menu}>
                       <li>
                         <Link
-                          to="/erp"
-                          className={`${styles.header_dropdown_item} ${isActive("/erp")}`}
+                          to="/products/erp"
+                          className={`${styles.header_dropdown_item} ${isActive("/products/erp")}`}
                         >
                           ERP
                         </Link>

@@ -18,7 +18,7 @@ const Footer = () => {
         <div className={styles.footer_header}>
           <div className={styles.footer_header_container}>
             <div className={styles.footer_logo}>
-              <img src="assets/logo.png" alt="Footer Logo" />
+              <img src="/assets/logo.png" alt="Footer Logo" />
             </div>
             <div className={styles.footer_contact}>
       
@@ -66,11 +66,11 @@ const Footer = () => {
                 </p>
                 <div className={styles.footer_download_btn}>
                   <a href="#" className={styles.footer_apple_store}>
-                    <img src="assets/icon-4.png" alt="App Store" />
+                    <img src="/assets/icon-4.png" alt="App Store" />
                     <span>Download on App Store</span>
                   </a>
                   <a href="#" className={styles.footer_play_store}>
-                    <img src="assets/icon-5.png" alt="Google Play" />
+                    <img src="/assets/icon-5.png" alt="Google Play" />
                     <span>Get it on Google Play</span>
                   </a>
                 </div>
