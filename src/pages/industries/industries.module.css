@@ -1,0 +1,29 @@
+.industries_cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    gap: 20px;
+    justify-content: space-between; 
+  }
+
+  .industries_cards .cardContainer {
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px); 
+    box-sizing: border-box; 
+  }
+
+  @media (max-width: 992px) {
+    .industries_cards .cardContainer {
+      flex: 1 1 calc(50% - 20px); 
+      max-width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .industries_cards .cardContainer {
+      flex: 1 1 100%; 
+      max-width: 100%;
+    }
+  }
