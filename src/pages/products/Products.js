@@ -3,7 +3,6 @@ import Hero from "../../components/service-hero/ServiceHero";
 import Nav from "../../components/simple-nav/SimpleNav";
 import CardGrid from "../../components/card-grid/CardGrid";
 import ErpData from "../../data/erpProducts";
-import homestyles from "../home/home.module.css";
 import styles from "./products.module.css";
 import CrmData from "../../data/crmProducts";
 import HeroBottom from "../../components/hero-bottom/HeroBottom";
@@ -13,21 +12,6 @@ const Products = () => {
   const breadcrumbs = [
     { text: "HOME", isActive: false },
     { text: "Products", isActive: true },
-  ];
-
-  const data = [
-    {
-      icon: "/assets/global.png",
-      title: "Global Accounting",
-    },
-    {
-      icon: "/assets/tax.png",
-      title: "Tax Consulting",
-    },
-    {
-      icon: "/assets/admin.png",
-      title: "Admin Services",
-    },
   ];
 
   return (
