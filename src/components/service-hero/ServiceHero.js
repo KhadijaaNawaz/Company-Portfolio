@@ -1,14 +1,20 @@
 import React from "react";
+import { useLocation } from "react-router-dom"; 
 import styles from "./hero.module.css";
 
 const ServiceHero = ({ buttonText, title, breadcrumbs }) => {
+  const location = useLocation(); 
+  const isIndustriesPage = location.pathname.startsWith("/industries"); // Check if the path starts with "/industries"
+
   return (
     <section className={styles.servicesSection}>
       <div className={styles.servicesContainer}>
-        {/* Left Section */}
+      
         <div className={styles.servicesText}>
-          <button className={styles.servicesBtn}>{buttonText}</button>
+         
+          {!isIndustriesPage && <button className={styles.servicesBtn}>{buttonText}</button>}
           <h1 className={styles.servicesTitle}>{title}</h1>
+          {isIndustriesPage && <p>{buttonText}</p>}
           <p className={styles.servicesBreadcrumb}>
             {breadcrumbs.map((crumb, index) => (
               <span key={index} className={crumb.isActive ? styles.breadcrumbActive : ""}>

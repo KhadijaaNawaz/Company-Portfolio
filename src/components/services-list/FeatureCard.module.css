@@ -10,6 +10,7 @@
   font-size: var(--font-large);
   margin-bottom: 2rem;
   font-weight: 300;
+  line-height: 1;
   color: var(--light);
 }
 
@@ -41,11 +42,11 @@
 
 .featureSidebar ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 
 .featureSidebar li {
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 35px;
   cursor: pointer;
   border-bottom: 0.5px solid rgba(182, 179, 179, 0.1);
