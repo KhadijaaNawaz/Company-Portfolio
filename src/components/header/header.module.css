@@ -379,13 +379,11 @@
     display: block;
 }
 
-/* Overall Dropdown Grid */
 .header_dropdown_menu_full .row {
     display: flex;
     gap: 20px;
 }
 
-/* Overview Section (30%) */
 .header_dropdown_menu_full .overview_section {
     width: 35%;
     background: var(--light);
@@ -394,9 +392,23 @@
 }
 
 .header_dropdown_menu_full .overview_section h3 {
-    font-size: var(--font-small);
+    font-size: var(--font-medium);
     color: var(--dark);
     font-weight: bold;
+    padding-bottom: 20px;
+    position: relative; 
+
+}
+
+.header_dropdown_menu_full .overview_section h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%; 
+    width: 50%; 
+    height: 4px; 
+    background-color: var(--hover-color);
+    transform: translateX(-50%); 
 }
 
 .header_dropdown_menu_full .overview_section p {
@@ -424,48 +436,33 @@
 
 .header_dropdown_menu_full .services_grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 40px;
+    gap: 5px;
 }
 
 .header_dropdown_menu_full .column {
     background: var(--light);
-    padding: 12px;
+    padding: 7px;
     border-radius: 6px;
     transition: all 0.3s ease-in-out;
 }
 
 .header_dropdown_menu_full .column .heading {
+    position: relative; 
+    transition: padding-left 0.3s ease-in-out; 
     margin-bottom: 10px;
     font-size: var(--font-small);
-    font-weight: 600;
-    color: var(--dark)!important;
+
+    color: var(--dark-rgba-50)!important;
+}
+.header_dropdown_menu_full .column .heading:hover {
+    background-color: var(light);
+    color: var(--light-green) !important;
+    padding-left: 15px !important;
 }
 
-.header_dropdown_menu_full .column a {
-    display: block;
-    color: var(--gray);
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.3s ease-in-out;
-    opacity: 0.7;
-}
-.header_dropdown_menu_full li a 
-{
-    padding: 0 !important;
-    padding-bottom: 10px !important;
-}
 
-.header_dropdown_menu_full .column a:hover {
-    color: var(--gray);
-    opacity: 0.8;
-}
-
-.header_dropdown_menu_full .column li {
-    list-style: none;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .header_dropdown_menu_full {
         padding: 15px;

@@ -90,13 +90,7 @@ const Header = () => {
                                     {service.heading}
                                   </Link>
                                 </h3>
-                                <ul>
-                                  {service.items.map((item, idx) => (
-                                    <li key={idx} aria-disabled="true">
-                                      <Link to="#" onClick={() => setDropdown_open(false)}>{item}</Link>
-                                    </li>
-                                  ))}
-                                </ul>
+                               
                               </div>
                             ))}
                           </div>
