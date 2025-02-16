@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import aboutstyles from "./about.module.css";
 import Hero from "../../components/service-hero/ServiceHero.js";
 import homestyles from "../home/home.module.css";
@@ -9,8 +12,7 @@ import ExploreFurtherSection from "../../components/explore/Explore.js";
 import accordionData from '../../data/accordionData';  
 import aboutData from '../../data/aboutData'; 
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 
 const About = () => {
   const breadcrumbs = [
@@ -51,20 +53,18 @@ const About = () => {
             <SectionTitle
               theme={"light"}
               btn_text={"Who We Are"}
-              title={"Your Trusted Financial Partners and Advisors"}
+              title={"Building Smarter Businesses with Modern Technology"}
               desc={
                 <>
-                  "Where your financial peace of mind is our top priority. We
-                  are a dedicated team of professionals who provide
-                  comprehensive accounting and financial services tailored to
-                  meet the unique needs of each of our clients.
+                  "CwizTech" empowers B2B and B2C businesses to achieve success through tailored solutions and innovative strategies. From startups to enterprises, we go beyond meeting requirements by offering ERP and CRM products and a wide range of services, including digital marketing, IT services, cloud computing, networking, cybersecurity services, software development, and more.
+
                   <br />
                   <br />
-                  Founded in 1994, Porto has grown into a respected leader in
-                  the accounting industry. Our team consists of experienced
-                  accountants, auditors, tax specialists, and financial advisors
-                  who are passionate about helping our clients achieve their
-                  financial goals."
+                  Our main focus on building brands, fostering growth, and delivering results makes us unique. We combine technology, creativity, and data-driven insights to provide holistic solutions that optimize operations, engage audiences, and drive measurable success.
+                  <br />
+                  <br />
+                  With CwizTech as your partner, you’ll unlock new opportunities, enhance collaboration, and thrive in today’s dynamic market. Let’s work together to build a future of innovation and excellence.
+
                 </>
               }
             />
@@ -84,12 +84,16 @@ const About = () => {
       <section className={homestyles.why_us_wrapper}>
         <div className={homestyles.why_us_container}>
           <div className={homestyles.left}>
-            <SectionTitle
+          <Accordion data={accordionData} />
+           
+          </div>
+          <div className={homestyles.right}>
+          <SectionTitle
               theme={"light"}
               btn_text={"Let's Work Together"}
               title={"Why Choose Us?"}
               desc={
-                "Whether you're a small business owner, an individual seeking tax advice, or a multinational corporation, we're here to support you. Contact us today to schedule a consultation and discover how we can help you achieve financial peace of mind."
+                "At CwizTech, we’re not just looking for short-term success. We aim to build sustainable growth for your business, ensuring that every strategy is designed for long-lasting impact. We maintain transparent communication throughout the process, making sure you always know how your business is progressing and the results of your investments."
               }
             />
             <button className={`${homestyles.contact_btn} `}>
@@ -98,9 +102,6 @@ const About = () => {
                 <FontAwesomeIcon icon={faArrowRight} />
               </span>
             </button>
-          </div>
-          <div className={homestyles.right}>
-          <Accordion data={accordionData} />
           </div>
         </div>
       </section>

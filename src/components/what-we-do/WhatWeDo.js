@@ -10,8 +10,8 @@ const WhatWeDo = ({ title, description, services, image, stats }) => {
         <div className={styles.what_content}>
           <h2 className={styles.what_title}>{title}</h2>
           <p className={styles.what_subDescription}>
-            We offer a full range of accounting services designed to provide you with
-            accurate financial data, insightful analysis, and strategic advice.
+            We offer a full range of services designed to provide you with
+            accurate  insightful analysis, and strategic advice.
           </p>
           <ul className={styles.what_serviceList}>
             {services.map((service, index) => (

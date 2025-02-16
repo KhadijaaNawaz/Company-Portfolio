@@ -1,0 +1,145 @@
+{
+    "services": [
+      {
+        "heading": "Managed IT Services",
+        "description": "At CwizTech, we take the stress out of managing your IT infrastructure so you can focus on growing your business. Our Managed IT Services provide 24/7 monitoring, proactive maintenance, and quick issue resolution, ensuring your systems run smoothly without interruptions.",
+        "items": [
+          "System monitoring and maintenance",
+          "Server and network management",
+          "Data backup and recovery solutions",
+          "IT infrastructure optimization"
+        ],
+        "imageUrl": "assets/Services/service-6.jpg",
+        "link": "/services/managed-it-services"
+      },
+      {
+        "heading": "IT Infrastructure Optimization",
+        "description": "Your IT infrastructure is the backbone of your business, and we ensure it’s optimized for maximum efficiency and performance.",
+        "items": [],
+        "imageUrl": "assets/Services/service-4.jpg",
+        "link": "/services/it-infrastructure-optimization"
+      },
+      {
+        "heading": "Cybersecurity Services",
+        "description": "With the rise of cyber threats, protecting your business is more important than ever. Our Cybersecurity Services include advanced threat detection, firewall protection, and risk assessment strategies to safeguard your data.",
+        "items": [
+          "Data protection and encryption",
+          "Threat detection and mitigation",
+          "Security audits and compliance",
+          "Antivirus and anti-malware solutions"
+        ],
+        "imageUrl": "assets/Services/service-5.jpg",
+        "link": "/services/cybersecurity-services"
+      },
+      {
+        "heading": "Cloud Computing Services",
+        "description": "Move your business to the cloud with confidence! CwizTech offers secure and scalable Cloud Computing Solutions, including cloud migration, infrastructure management, and disaster recovery planning.",
+        "items": [
+          "Cloud storage solutions",
+          "Cloud infrastructure setup (AWS, Azure, Google Cloud)",
+          "SaaS (Software as a Service) solutions",
+          "Backup and disaster recovery in the cloud"
+        ],
+        "imageUrl": "assets/Services/service-3.jpg",
+        "link": "/services/cloud-computing"
+      },
+      {
+        "heading": "IT Consulting",
+        "description": "Our IT Consulting Services provide expert guidance on IT strategies, digital transformation, and technology implementation.",
+        "items": [
+          "Technology strategy planning",
+          "IT infrastructure assessment",
+          "Process automation solutions",
+          "Software or hardware recommendation"
+        ],
+        "imageUrl": "assets/Services/service-2.jpg",
+        "link": "/services/it-consulting"
+      },
+      {
+        "heading": "Software Development",
+        "description": "Custom software built for your business! We develop innovative, user-friendly, and high-performance software applications that meet your unique business needs.",
+        "items": [
+          "Custom software development",
+          "Web and mobile app development",
+          "API integration",
+          "Software testing and QA services"
+        ],
+        "imageUrl": "assets/Services/service-1.jpg",
+        "link": "/services/software-development"
+      },
+      {
+        "heading": "Help Desk and Support",
+        "description": "Our dedicated Help Desk and IT Support team is available round the clock to resolve your IT challenges.",
+        "items": [
+          "On-site and remote technical support",
+          "Troubleshooting software/hardware issues",
+          "24/7 IT support services",
+          "Training and user support"
+        ],
+        "imageUrl": "assets/Services/service-6.jpg",
+        "link": "/services/help-desk-support"
+      },
+      {
+        "heading": "Data Services",
+        "description": "Data is your most valuable asset, and we help you manage it efficiently.",
+        "items": [
+          "Data migration",
+          "Data analysis and reporting",
+          "Big data management",
+          "Database setup and administration"
+        ],
+        "imageUrl": "assets/Services/service-5.jpg",
+        "link": "/services/data-services"
+      },
+      {
+        "heading": "Internet and Email Services",
+        "description": "Reliable Internet and Email Solutions are crucial for business communication.",
+        "items": [
+          "Email server setup (e.g., Microsoft 365, Google Workspace)",
+          "Domain registration and hosting",
+          "Website maintenance and updates",
+          "Internet Troubleshooting"
+        ],
+        "imageUrl": "assets/Services/service-4.jpg",
+        "link": "/services/internet-email"
+      },
+      {
+        "heading": "IoT (Internet of Things) Solutions",
+        "description": "We turn businesses into smart enterprises with our IoT Solutions.",
+        "items": [
+          "Smart device setup and integration",
+          "IoT security services",
+          "Monitoring and maintenance of IoT networks"
+        ],
+        "imageUrl": "assets/Services/service-3.jpg",
+        "link": "/services/iot-solutions"
+      },
+      {
+        "heading": "IT Outsourcing",
+        "description": "Reduce costs and enhance efficiency with IT Outsourcing Services from CwizTech.",
+        "items": [
+          "Outsourcing software development",
+          "Remote IT management",
+          "Offshore IT teams"
+        ],
+        "imageUrl": "assets/Services/service-2.jpg",
+        "link": "/services/it-outsourcing"
+      },
+      {
+        "heading": "Digital Marketing Services",
+        "description": "Our Digital Marketing Services include SEO, PPC, social media marketing, content creation, branding, and email marketing to boost your visibility.",
+        "items": [
+          "Search Engine Optimization (SEO)",
+          "Pay-Per-Click Advertising (PPC)",
+          "Social Media Marketing (SMM)",
+          "Content Marketing",
+          "Email Marketing",
+          "Web Analytics and Performance Tracking",
+          "Affiliate Marketing"
+        ],
+        "imageUrl": "assets/Services/service-1.jpg",
+        "link": "/services/digital-marketing"
+      }
+    ]
+  }
+  

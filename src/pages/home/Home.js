@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import homestyles from "./home.module.css";
 import Services from "../../components/services/Services";
 import SectionTitle from "../../components/section-title/SectionTitle";
 import Accordion from "../../components/accordion/Accordion";
 import Experience from "../../components/experience/Experience";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import HeroSection from "../../components/hero/Hero";
 import accordionData from "../../data/accordionData";
 import HeroBottom from "../../components/hero-bottom/HeroBottom";
@@ -43,7 +45,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Services />
+      {/* <Services /> */}
 
       <section className={homestyles.why_us_wrapper}>
         <div className={homestyles.why_us_container}>

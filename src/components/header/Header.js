@@ -4,6 +4,8 @@ import { useLocation, Link } from "react-router-dom";
 import { faPhone, faBars, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./header.module.css";
+import servicesData from "../../data/services.json";
+
 
 const Header = () => {
   const [dropdown_open, setDropdown_open] = useState(false);
@@ -24,7 +26,7 @@ const Header = () => {
 
   const location = useLocation();
 
-  const isActive = (path) => location.pathname === path ? styles.active : "";
+  const isActive = (path) => (location.pathname === path ? styles.active : "");
 
   return (
     <header className={styles.header}>
@@ -48,72 +50,67 @@ const Header = () => {
             <div className={`${styles.header_col_nav} ${menu_open ? styles.open : ""}`}>
               <nav className={styles.header_nav}>
                 <ul className={styles.header_nav_list}>
-                  {}
                   <li>
-                    <Link
-                      to="/"
-                      className={`${styles.header_nav_link} ${isActive("/")}`}
-                    >
+                    <Link to="/" className={`${styles.header_nav_link} ${isActive("/")}`}>
                       Home
                     </Link>
                   </li>
 
-                  {}
-                  <li className={styles.dropdown} onClick={toggleDropdown}>
+                  <li
+                    className={styles.dropdown}
+                    onMouseEnter={() => setDropdown_open(true)}
+                    onClick={() => setDropdown_open(false)} 
+                  >
                     <div className={styles.header_dropdown_nav}>
-                      <Link
-                        to="/services"
-                        className={`${styles.header_nav_link} ${isActive("/services")}`}
-                      >
+                      <Link to="/services" className={`${styles.header_nav_link} ${isActive("/services")}`}>
                         Services
                       </Link>
                       <FontAwesomeIcon icon={faChevronDown} />
                     </div>
-                    <ul className={styles.header_dropdown_menu}>
-                      <li>
-                        <Link
-                          to="/services"
-                          className={`${styles.header_dropdown_item} ${isActive("/services")}`}
-                        >
-                          Overview
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/accounting"
-                          className={`${styles.header_dropdown_item} ${isActive("/accounting")}`}
-                        >
-                          Accounting
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/tax-planning"
-                          className={`${styles.header_dropdown_item} ${isActive("/tax-planning")}`}
-                        >
-                          Tax Planning
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/business-advisory"
-                          className={`${styles.header_dropdown_item} ${isActive("/business-advisory")}`}
-                        >
-                          Business Advisory
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/payroll"
-                          className={`${styles.header_dropdown_item} ${isActive("/payroll")}`}
-                        >
-                          Payroll Management
-                        </Link>
-                      </li>
+
+                    <ul
+                      className={`${styles.header_dropdown_menu} ${styles.header_dropdown_menu_full} ${dropdown_open ? styles.open : ""
+                        }`}
+                    >
+                      <div className={styles.row}>
+                        <div className={styles.overview_section}>
+                          <h3>Our IT Solutions & Services</h3>
+                          <p>We provide a wide range of AI and software development services to help businesses scale and innovate.</p>
+                          <Link to="/services" className={styles.btn_quote} onClick={() => setDropdown_open(false)}>
+                            Overview of the services <i className={styles.arrow_icon}>→</i>
+                          </Link>
+                        </div>
+
+                        <div className={styles.services_section}>
+                          <div className={styles.services_grid}>
+                            {servicesData.services.map((service, index) => (
+                              <div key={index} className={styles.column}>
+                                <h3>
+                                  <Link to={service.link} className={styles.heading} onClick={() => setDropdown_open(false)}>
+                                    {service.heading}
+                                  </Link>
+                                </h3>
+                                <ul>
+                                  {service.items.map((item, idx) => (
+                                    <li key={idx} aria-disabled="true">
+                                      <Link to="#" onClick={() => setDropdown_open(false)}>{item}</Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
                     </ul>
                   </li>
 
-                  {}
+
+
+
+
+
+                  { }
                   <li className={styles.dropdown} onClick={toggleProductsDropdown}>
                     <div className={styles.header_dropdown_nav}>
                       <Link
@@ -144,7 +141,7 @@ const Header = () => {
                     </ul>
                   </li>
 
-                  {}
+                  { }
                   <li>
                     <Link
                       to="/industries"
@@ -172,7 +169,7 @@ const Header = () => {
                     </Link>
                   </li>
 
-                  {}
+                  { }
                   <li className={styles.dropdown} onClick={toggleDropdown}>
                     <div className={styles.header_dropdown_nav}>
                       <Link

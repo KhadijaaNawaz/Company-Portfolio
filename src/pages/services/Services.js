@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import servicestyles from "./service.module.css";
 import homestyles from "../home/home.module.css";
 import Hero from "../../components/service-hero/ServiceHero.js";
@@ -6,11 +10,8 @@ import SectionTitle from "../../components/section-title/SectionTitle";
 import Card from "../../components/card/Card.js";
 import IndustriesSection from "../../components/industries-section/IndustriesSection";
 import ExploreFurtherSection from "../../components/explore/Explore.js";
-import services from "./services.json";
-
-import { faClock } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import services from "../../data/services.json";
+import { Link } from "react-router-dom";
 
 const Services = () => {
 
@@ -18,14 +19,14 @@ const Services = () => {
     { text: "HOME", isActive: false },
     { text: "SERVICES", isActive: true },
   ];
- 
+
   return (
     <div className={servicestyles.service_page}>
       <div className={servicestyles.service_wrapper}>
         <Hero
-         buttonText="WHAT WE DO" 
-         title="Our Services" 
-         breadcrumbs={breadcrumbs}  />
+          buttonText="WHAT WE DO"
+          title="Our Services"
+          breadcrumbs={breadcrumbs} />
         <section className={homestyles.why_us_wrapper}>
           <div className={homestyles.why_us_container}>
             <div className={homestyles.left}></div>
@@ -48,32 +49,35 @@ const Services = () => {
           </div>
         </section>
         <section>
-         
+
         </section>
         <section className={servicestyles.servicesSection}>
           <SectionTitle
-          theme={"dark"}
-          btn_text={"Our Services"}
-          title={"Accounting Services"}
-          desc={" Full-service accounting to drive your financial success."}
-        />
+            theme={"dark"}
+            btn_text={"Our Services"}
+            title={"Accounting Services"}
+            desc={" Full-service accounting to drive your financial success."}
+          />
           <div className={servicestyles.cardGrid}>
-            {services.map((services) => (
+            {services.services.map((service, index) => (
               <Card
-              eventData={{
-                title: services.title,
-                description: services.description,
-                imageUrl: services.imageUrl,
-              }}
-            />
+                key={index}
+                eventData={{
+                  title: service.heading,
+                  description: service.description,
+                  imageUrl: service.imageUrl || "default-image.jpg",
+                  link:service.link,
+                }}
+              />
             ))}
           </div>
+
           <div className={servicestyles.slider_bottom}>
-          <p>
-            <FontAwesomeIcon icon={faClock} style={{ marginRight: '10px', fontSize: '20px' }} />
-            24/7 Availability - Round-the-clock support for all your accounting needs, anytime.
-          </p>
-        </div>
+            <p>
+              <FontAwesomeIcon icon={faClock} style={{ marginRight: '10px', fontSize: '20px' }} />
+              24/7 Availability - Round-the-clock support for all your accounting needs, anytime.
+            </p>
+          </div>
         </section>
         <IndustriesSection />
         <ExploreFurtherSection />
